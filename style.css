@@ -6,6 +6,7 @@ body {
 
 header {
   width: 2000px;
+  height: 500px;
   margin-left: -25%;
 }
 
@@ -73,6 +74,21 @@ section {
   background-color: #000000;
 }
 
+.main_img {
+  width: 400px;
+  height: 600px;
+  float: left;
+  margin-right: 15px;
+}
+
+.portfolio_works_img {
+  width: 220px;
+  height: 220px;
+  margin-left: 5px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
 .container {
   display: flex;
 }
@@ -109,10 +125,15 @@ section {
   margin-left: 10px;
   padding: 20px;
   width: 220px;
-  height: 220px;
+  height: auto;
 }
 
 .contacts_media img {
   width: 50px;
+  height: 50px;
+}
+
+.skills_img {
+  width: auto;
   height: 50px;
 }
