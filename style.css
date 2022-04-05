@@ -254,6 +254,37 @@ body {
     background-color:#FFA501;
 }
 
+.work-info_img {
+    margin-top: 33px;
+    margin-left: 10px;
+}
+
+.work-info_img_1 {
+    margin-top: 33px;
+    margin-left: -35px;
+}
+
+.web_img {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.app-dev_img {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.ux-ui_img {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
 .work-info_container_text {
     margin-left: 50px;
     width: 200px;
