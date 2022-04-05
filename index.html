@@ -1,254 +1,275 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>CV</title>
-  <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>CV</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!----Стили для текста------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main">
-    <h4>Меня зовут Анастасия Мухина</h4>
-    <h1>Я web-разработчик из города Саратов</h1>
-    <nav class="main_nav">
-      <a href="#portfolio">Портфолио</a>
-      <a href="#about-me">Про меня</a>
-    </nav>
-  </header>
+    <header class="main">
+        <!-----Левый блок Социальные сети------->
+        <div class="main_media">
+            <div class="main_media_images">
+                <img src="src/Icons/Github.jpg" alt="Github" class="little-icon">
+                <img src="src/Icons/Instagram.jpg" alt="I" class="little-icon"/>
+                <img src="src/Icons/Facebook.jpg" alt="Facebook" class="little-icon"/>
+            </div>
+            <div class="vertical_black-line">
+            </div>
+            <p class="main_media_p"><b>Социальные сети</b></p>
+        </div>
 
-
-  <article class="all-info">
-  <section class="about-me" id="about-me">
-    <img src="src/pic1.jpg" alt="Красивая картинка 1" class="main_img">
-    <div class="menu_container">
-      <div class="menu_container_circle">
-        <div class="orange-circle">
-        </div>
-        <h5>Про меня</h5>
-      </div>
-      <h1>Меня зовут Анастасия</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="about-me_main-info">
-      <p>Меня зовут Мухина Анастасия Алексеевна, мне 21 год, дата рождения: 28.01.2001. Адрес проживания: г. Саратов, ул. Мамонтовой, д.5, кв. 32.
-    </div>
-    <div class="about-me_work-info">
-      <div class="container">
-        <div class="orange-circle">
-        </div>
-        <div class="container_text">
-          <h5>Личные качества</h5>
-          <p>Ответственность, умение работать в команде, стрессоустойчивость, стремление к карьерному росту, организованность.
-        </div>
-      </div>
-      <div class="container">
-        <div class="orange-circle">
-        </div>
-        <div class="container_text">
-          <h5>Хобби</h5>
-          <p>В свободное время я занимаюсь плаванием и танцами, развожу домашние растения, увлекаюсь настольными и компьютерными играми, в холодное время года катаюсь на лыжах и сноуборде.
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="experience" id="experience">
-    <div class="menu_container">
-      <div class="menu_container_circle">
-        <div class="orange-circle">
-        </div>
-        <h5>Опыт</h5>
-      </div>
-      <h1>Чем я буду полезна</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="experience-work_container">
-      <div class="experience_education">
-        <div class="experience_education_container">
-          <div class="small-orange-circle">
-          </div>
-          <h3>Образование</h3>
-        </div>
-        <div class="education_container">
-          <div class="big-black-line">
-          </div>
-          <ol>
-            <li>
-              <div class="small-black-line">
-              </div>
-              <div class="container">
-                <div class="orange-circle">
+        <!-------Главный заголовок сайта--------->
+        <div class="main_info">
+            <div class="menu_container">
+                <div class="menu_container_title">
                 </div>
-                <p>2018-2021: СГУ им. Н. Г. Чернышевского, факультет компьютерных наук и информационных технологий, направление - программная инженерия.
-              </div>
-            </li>
-            <li>
-              <div class="small-black-line">
-              </div>
-              <div class="container">
-                <div class="orange-circle">
+                <h3 class="main_h3">Меня зовут Анастасия Мухина</h3>
+            </div>
+            <h1 class="main_h1">Я web-разработчик из города Саратов</h1>
+            <nav class="main_nav">
+                <a href="#portfolio" class="main_portfolio"><b>Портфолио</b></a>
+                <a href="#about-me" class="main_about-me"><b>Про меня</b></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <article class="all-info">
+        <section class="about-me" id="about-me">
+            <img src="src/Photo/pic1.jpg" alt="Красивая картинка 1" class="main_img">
+            <div class="wrapper">
+                <div class="menu_container">
+                    <div class="menu_container_circle">
+                        <div class="orange-circle">
+                        </div>
+                        <h5>Про меня</h5>
+                    </div>
+                    <h2>Меня зовут Анастасия</h2>
+                    <div class="orange-line">
+                    </div>
                 </div>
-              <p>2018-2021: Дополнительное профессиональное образование – переводчик в сфере профессиональной коммуникации.
-              </div>
-            </li>
-            <li>
-              <div class="small-black-line">
-              </div>
-              <div class="container">
-                <div class="orange-circle">
+                <!-------
+                <div class="about-me_main-info">
+                    <p>Меня зовут Мухина Анастасия Алексеевна, мне 21 год, дата рождения: 28.01.2001. Адрес проживания: г. Саратов, ул. Мамонтовой, д.5, кв. 32.</p>
                 </div>
-                <p>2014-2017: Языковая подготовка в центре языка и культуры "Слово" - сертификат владения уровнем B2.
-              </div>
-            </li>
-          </ol>
-        </div> 
-      </div>
-      <div class="experience_work">
-        <div class="experience_work_container">
-          <div class="small-orange-circle">
-          </div>
-          <h3>Опыт работы</h3>
-        </div>
-        <div class="work_container">
-          <div class="big-black-line">
-          </div>
-          <ol>
-            <li>
-              <div class="small-black-line">
-              </div>
-              <div class="container">
-                <div class="orange-circle">
+                <div class="about-me_work-info">
+                    <div class="container">
+                        <div class="orange-circle">
+                        </div>
+                        <div class="container_text">
+                            <h3 class="qualities_h3">Личные качества</h3>
+                            <p class="qualities_p">Ответственность, умение работать в команде, стрессоустойчивость, стремление к карьерному росту, организованность.</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="orange-circle">
+                        </div>
+                        <div class="container_text">
+                            <h3 class="hobby_h3">Хобби</h3>
+                            <p class="hobby_p">В свободное время я занимаюсь плаванием и танцами, развожу домашние растения, увлекаюсь настольными и компьютерными играми, в холодное время года катаюсь на лыжах и сноуборде.</p>
+                        </div>
+                    </div>
                 </div>
-                <p>Курсовой проект: веб-приложение "Travel Catalog" на языке Pithon, клиентская часть - HTML/CSS, JS.
-              </div>
-            </li>
-            <li>
-              <div class="small-black-line">
-              </div>
-              <div class="container">
-                <div class="orange-circle">
-                </div>  
-                <p>Проектная работа "Бот-электротранспорт" Вконтакте, разработка пользовательской части, визуализация.
-              </div>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section>
+                ----->
+            </div>
+        </section>
 
+        <!-------
 
-  <section class="skills" id="skills">
-    <div class="menu_container">
-      <div class="menu_container_circle">
-        <div class="orange-circle">
-        </div>
-        <h5>Навыки</h5>
-      </div>
-      <h1>Что я использую в работе</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="skills_container">  
-      <div class="skills_html">
-        <img src="src/html-pic.jpg" alt="html" class="skills_img">
-        <p>HTML5
-        <p>Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированнную структуру вашего продукта.
-      </div>
-      <div class="skills_css">
-        <img src="src/css-pic.jpg" alt="css" class="skills_img">
-        <p>CSS3
-        <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!
-      </div>
-      <div class="skills_js">
-        <img src="src/js-pic.jpg" alt="javaScript" class="skills_img">
-        <p>Java Script
-        <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое
-      </div>
-      <div class="skills_react">
-        <img src="src/react-pic.jpg" alt="React" class="skills_img">
-        <p>React
-        <p>Эта библиотека пзволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели.
-      </div>
-    </div>
-  </section>
+        <section class="experience" id="experience">
+            <div class="menu_container">
+                <div class="menu_container_circle">
+                    <div class="orange-circle">
+                    </div>
+                    <h3>Опыт</h3>
+                </div>
+                <h2>Чем я буду полезна</h2>
+                <div class="orange-line">
+                </div>
+            </div>
+            
+            --->
+            <!----------Блок Образование----------->
+            <!-----
 
+            <div class="experience-work_container">
+                <div class="experience_education">
+                    <div class="experience_education_container">
+                        <div class="small-orange-circle">
+                        </div>
+                        <h3>Образование</h3>
+                    </div>
+                    <div class="education_container">
+                        <div class="big-black-line">
+                        </div>
+                        <ol>
+                            <li>
+                                <div class="small-black-line">
+                                </div>
+                                <div class="container">
+                                    <div class="orange-circle">
+                                    </div>
+                                    <p>2018-2021: СГУ им. Н. Г. Чернышевского, факультет компьютерных наук и информационных технологий, направление - программная инженерия.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-black-line">
+                                </div>
+                                <div class="container">
+                                    <div class="orange-circle">
+                                    </div>
+                                    <p>2018-2021: Дополнительное профессиональное образование – переводчик в сфере профессиональной коммуникации.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-black-line">
+                                </div>
+                                <div class="container">
+                                    <div class="orange-circle">
+                                    </div>
+                                    <p>2014-2017: Языковая подготовка в центре языка и культуры "Слово" - сертификат владения уровнем B2.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div> 
+                </div>
 
-<section class="portfolio" id="portfolio">
-    <div class="menu_container">
-      <div class="menu_container_circle">
-        <div class="orange-circle">
-        </div>
-        <h5>Портфолио</h5>
-      </div>
-      <h1>Мои работы</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="portfolio_works">
-    <img src="src/TravelCatalog.jpg" alt="TravelCatalog" class="portfolio_works_img">
-    <img src="src/BotTransport.jpg" alt="BotTransport" class="portfolio_works_img">
-    <img src="src/Picture1.jpg" alt="Красивая картинка 1" class="portfolio_works_img">
-    <img src="src/Picture2.jpg" alt="Красивая картинка 2" class="portfolio_works_img">
-    </div>
-  </section>  
+                ------>
+                <!----------Блок Опыт работы------------->
+                <!---------
 
-
-  <section class="contacts" id="contacts">
-    <img src="src/pic1.jpg" alt="Красивая картинка 2" class="main_img">
-    <div class="menu_container">
-      <div class="menu_container_circle">
-        <div class="orange-circle">
-        </div>
-        <h5>Контакты</h5>
-      </div>
-      <h1>Свяжитесь со мной</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="contacts_media">
-      <h4>Социальные сети:</h4>
-      <a href = "https://vk.com/ancstwi"><img src = "src/vk.png" alt="Вконтакте"></a>
-      <a href = "https://t.me/ancstwi"><img src = "src/telegram.png" alt="Телеграмм"></a>
-      <a href = "https://www.instagram.com/ancstwi"><img src = "src/instagram.png" alt="Инстаграм"></a>
-      <a href = "https://vm.tiktok.com/ZSdLGKkCH/"><img src = "src/tiktok.png" alt="Тикток"></a>
-      <a href = "https://youtu.be/dQw4w9WgXcQ"><img src = "src/youtube.png" alt="Ютуб"></a>
-    </div>
-    <div class="contacts_call-me">
-      <h4>Как со мной связаться:</h4>
-      <ul class="contacts_call-me_ul">
-        <li>Телефон: 89170245787</li>
-         <li>Почта: nastmukh@gmail.com</li>
-       </ul>
-    <div>
-  </section>
-</article>
-
-
-
-<section class="questions" id="questions">
-    <div class="menu_container">
-      <div class=menu_container_circle>
-        <div class="orange-circle">
-        </div>
-        <h5>Вопросы</h5>
-      </div>
-      <h1>...</h1>
-      <div class="orange-line">
-      </div>
-    </div>
-    <div class="questions_text">
-      <ol>
-        <li>Проблема с хэдером: картинка на фоне не растягивается на всю длину окна. Возможно, я не совсем поняла логику того, как это должно выглядеть (из-за того, что я уменьшила body, я не могу выровнять картинку по ширине, был вариант весь текст записать в отдельный блок и задать отступы этому блоку, но это выглядит как костыль, плюс черная рамка вокруг body заходит под картинку).</li>
-        <li>Выравнивание заголовков. Коротко: всё съехало. Длинно: В тех блоках, где есть картинка, в образце заголовки прижаты к левому краю, т.е. к самой картинке, причем прижат весь заголовок полностью, и выравнивания по центру нет. Вопрос в том, как мне поступить со всеми этими блоками заголовков, должно ли быть автоматическое выравнивание для тех блоков, где есть картинки, или для этих блоков все задается отдельно, т.е. у меня должно быть два разных блока заголовков для тех, кто по центру, и для тех, кто прижат к картинке? </li>
-        <li>Сжатие окна. Хотела спросить про то, как должно вести себя содержимое блоков, когда мы изменяем размер окна. Возможно, немного заглядываю вперед, потому что в том портфолио из figma, которое Вы мне присылали, третье изображение как раз сжатая или мобильная версия (а я пока делала только первое изображение). Но все же интересно, каким образом задается такое сжатие?</li>
-        <li>По поводу фигур и подобных конструкций. Я задавала все фигуры (кружки и линии) с помощью div-ов. Возник такой вопрос, правильный ли это способ, и какие варианты создания фигур есть еще? Например, если мы говорим про реальные рабочие проекты, как подобные рисунки прописывать (если в этих проектах они вообще присутствуют)? Есть ли вариант использовать компьютерную графику, или все подобные фигуры прописываются как изображения, или есть варианты задания div-ами более сложных объектов (например, звезда, объемные фигуры и т.д.).</li>
-        <li>Маленький вопрос о блоках Про меня и Опыт. Оранжевые кружки в нем сжались. Я полагаю, это из-за того, что элементы в блоке конфликтуют и друг на друга накладываются, и нужно переработать логику блока. Но может все исправляется гораздо проще?</li>
-      </ol>
-    </div>
+                <div class="experience_work">
+                    <div class="experience_work_container">
+                        <div class="small-orange-circle">
+                        </div>
+                        <h3>Опыт работы</h3>
+                    </div>
+                    <div class="work_container">
+                        <div class="big-black-line">
+                        </div>
+                        <ol>
+                            <li>
+                                <div class="small-black-line">
+                                </div>
+                                <div class="container">
+                                    <div class="orange-circle">
+                                    </div>
+                                    <p>Курсовой проект: веб-приложение "Travel Catalog" на языке Pithon, клиентская часть - HTML/CSS, JS.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="small-black-line">
+                                </div>
+                                <div class="container">
+                                    <div class="orange-circle">
+                                    </div>  
+                                    <p>Проектная работа "Бот-электротранспорт" Вконтакте, разработка пользовательской части, визуализация.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
     
-  </section>
+        ----->
+        <!---------Навыки---------->
+        <!----------
+
+        <section class="skills" id="skills">
+            <div class="menu_container">
+                <div class="menu_container_circle">
+                    <div class="orange-circle">
+                    </div>
+                <h3>Навыки</h3>
+                </div>
+                <h2>Что я использую в работе</h2>
+                <div class="orange-line">
+                </div>
+            </div>
+            <div class="skills_container">  
+                <div class="skills_html">
+                    <img src="src/html-pic.jpg" alt="html" class="skills_img">
+                    <p>HTML5</p>
+                    <p>Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированнную структуру вашего продукта.</p>
+                </div>
+                <div class="skills_css">
+                    <img src="src/css-pic.jpg" alt="css" class="skills_img">
+                    <p>CSS3</p>
+                    <p>Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                </div>
+                <div class="skills_js">
+                    <img src="src/js-pic.jpg" alt="javaScript" class="skills_img">
+                    <p>Java Script</p>
+                    <p>Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
+                </div>
+                <div class="skills_react">
+                    <img src="src/react-pic.jpg" alt="React" class="skills_img">
+                    <p>React</p>
+                    <p>Эта библиотека пзволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="portfolio" id="portfolio">
+            <div class="menu_container">
+                <div class="menu_container_circle">
+                    <div class="orange-circle">
+                    </div>
+                    <h3>Портфолио</h3>
+                </div>
+                <h2>Мои работы</h2>
+                <div class="orange-line">
+                </div>
+            </div>
+            <div class="portfolio_works">
+                <img src="src/TravelCatalog.jpg" alt="TravelCatalog" class="portfolio_works_img">
+                <img src="src/BotTransport.jpg" alt="BotTransport" class="portfolio_works_img">
+                <img src="src/Picture1.jpg" alt="Красивая картинка 1" class="portfolio_works_img">
+                <img src="src/Picture2.jpg" alt="Красивая картинка 2" class="portfolio_works_img">
+            </div>
+        </section>  
+
+
+        <section class="contacts" id="contacts">
+            <img src="src/pic1.jpg" alt="Красивая картинка 2" class="main_img">
+            <div class="menu_container">
+                <div class="menu_container_circle">
+                    <div class="orange-circle">
+                    </div>
+                    <h3>Контакты</h3>
+                </div>
+                <h2>Свяжитесь со мной</h2>
+                <div class="orange-line">
+                </div>
+            </div>
+            <div class="contacts_media">
+                <h3>Социальные сети:</h3>
+                <a href = "https://vk.com/ancstwi"><img src = "src/vk.png" alt="Вконтакте"></a>
+                <a href = "https://t.me/ancstwi"><img src = "src/telegram.png" alt="Телеграмм"></a>
+                <a href = "https://www.instagram.com/ancstwi"><img src = "src/instagram.png" alt="Инстаграм"></a>
+                <a href = "https://vm.tiktok.com/ZSdLGKkCH/"><img src = "src/tiktok.png" alt="Тикток"></a>
+                <a href = "https://youtu.be/dQw4w9WgXcQ"><img src = "src/youtube.png" alt="Ютуб"></a>
+            </div>
+            <div class="contacts_call-me">
+                <h3>Как со мной связаться:</h3>
+                <ul class="contacts_call-me_ul">
+                    <li>Телефон: 89170245787</li>
+                    <li>Почта: nastmukh@gmail.com</li>
+                </ul>
+            <div>
+        </section>
+
+    -------->
+
+    </article>
 
 </body>
 </html>

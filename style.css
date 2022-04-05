@@ -1,148 +1,246 @@
-body {
-  width: 1000px;
-  margin: 0 auto;
-  border: 1px solid black; 
-}
+/*--------------------Стили для блока header--------------------*/
 
 header {
-  width: 2000px;
-  height: 500px;
-  margin-left: -25%;
+    width: 100%;
+    height: 800px;
+    margin-bottom: -100px;
+}
+  
+body {
+    background-image: url(src/Background/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main {
-  background-image: url(src/Background.jpg);
+    display: flex;
+    justify-content: flex-start;
 }
 
-section {
-  padding: 20px;
+/*-------Стили бля блока media--------------*/
+
+.main_media {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 270px;
+    margin-left: 80px;
+    margin-right: 0px;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    position: relative;
 }
 
-.main_nav a{
-  color: "black";
-  text-decoration: none;
+.main_media img{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
 }
 
-.main_nav a:visited {
-  color: inherit;
+.main_media_images {
+    margin-left: 90px;
+    margin-top: 18px;
 }
 
-.main_nav a:hover {
-  color: #e3ffeb;
+.vertical_black-line::after {
+    content: "";
+    position:absolute;
+    top: 27px;
+    left: 158px;
+    width: 70px;
+    height: 3px;
+    background-color: #000000;
 }
 
-.all-info {
-  display: flex;
-  flex-direction: column;
+
+/*-------Стили для блока info----------*/
+
+.main_info {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 350px;
 }
 
-.all-info li {
-  list-style-type: none;
-}
-
-.all-info h1 {
-  display: table;
-  width: auto;
-  margin: auto;
-}
-
-.orange-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #FFA501;
-}
-
-.small-orange-circle {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #FFA501;
-}
-
-.orange-line {
-  width: 50px;
-  height: 3px;
-  background-color: #FFA501;
-  margin: 50px;
-}
-
-.big-black-line {
-  width: 1px;
-  height: 280px;
-  background-color: #000000;
-}
-
-.small-black-line {
-  width: 45px;
-  height: 1px;
-  background-color: #000000;
-}
-
-.main_img {
-  width: 400px;
-  height: 600px;
-  float: left;
-  margin-right: 15px;
-}
-
-.portfolio_works_img {
-  width: 220px;
-  height: 220px;
-  margin-left: 5px;
-  margin-right: 10px;
-  object-fit: cover;
-}
-
-.container {
-  display: flex;
+.main_h3 {
+    margin-left: 6px;
+    margin-bottom: -17px;
 }
 
 .menu_container {
-  display: flex;
-  display: table;
-  width: auto;
-  margin: auto;
+    position: relative;
 }
 
+.menu_container_title::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -4px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+.main_portfolio {
+    background-color: #FFA501;
+}
+
+/*-------Стили для ссылок в блоке nav------*/
+
+.main_nav {
+    margin-top: 40px;
+}
+
+.main_nav a{
+    color: "black";
+    text-decoration: none;
+    padding: 12px;
+}
+  
+.main_nav a:visited {
+    color: inherit;
+}
+  
+.main_nav a:hover {
+    color: #ffefcf;
+}
+
+
+/*-------------------------Стили для фигур--------------------------*/
+
+
+
+.orange-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFA501;
+}
+
+.small-orange-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFA501;
+}
+
+.orange-line {
+    width: 50px;
+    height: 3px;
+    background-color: #FFA501;
+    margin: 50px;
+}
+
+.big-black-line {
+    width: 1px;
+    height: 280px;
+    background-color: #000000;
+}
+
+.small-black-line {
+    width: 45px;
+    height: 1px;
+    background-color: #000000;
+}
+
+
+/*-------------------Стили для всех блоков section--------------*/
+
+
+section {
+    padding: 20px;
+}
+
+.all-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+  
+.all-info li {
+    list-style-type: none;
+}
+  
+.all-info h2 {
+    width: auto;
+    margin: auto;
+}
+  
+
+/*-------------------Стили для блока about-me--------------------*/
+
+
+.wrapper {
+    display: flex;
+}
+
+.main_img {
+    width: 400px;
+    height: 600px;
+    float: left;
+    margin-right: 15px;
+}
+  
+.portfolio_works_img {
+    width: 220px;
+    height: 220px;
+    margin-left: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}  
+  
+
+
+.menu_container {
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+  
 .menu_container_circle {
-  display: flex;
+    display: flex;
 }
-
+  
 .experience-work_container {
-  display: flex;
-  margin-left: 10px;
-  padding: 20px;
+    display: flex;
+    margin-left: 10px;
+    padding: 20px;
 }
-
+  
 .education_container {
-  display: flex;
-  width: 450px;
+    display: flex;
+    width: 450px;
 }
-
+  
 .work_container {
-  display: flex;
-  width: 450px;
-}
-
-.skills_container {
-  display: flex;
-}
-
-.skills_container div {
-  border: 1px solid black;
-  margin-left: 10px;
-  padding: 20px;
-  width: 220px;
-  height: auto;
+    display: flex;
+    width: 450px;
 }
 
 .contacts_media img {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 }
 
+/*---------------------Стили для блока skills----------------------*/
+
+
+.skills_container {
+    display: flex;
+}
+  
+.skills_container div {
+    border: 1px solid black;
+    margin-left: 10px;
+    padding: 20px;
+    width: 220px;
+    height: auto;
+}
+  
 .skills_img {
-  width: auto;
-  height: 50px;
+    width: auto;
+    height: 50px;
 }
