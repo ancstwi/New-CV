@@ -1,396 +1,147 @@
-/*--------------------Стили для блока header--------------------*/
+body {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black; 
+}
 
 header {
-    width: 100%;
-    height: 800px;
-    margin-bottom: -100px;
-}
-  
-body {
-    background-image: url(src/Background/Background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-family: 'Poppins', sans-serif;
+  width: 2000px;
+  height: 500px;
+  margin-left: -25%;
 }
 
 .main {
-    display: flex;
-    justify-content: flex-start;
+  background-image: url(src/Background.jpg);
 }
 
-/*----------Стили для header (Три черных полосы)---------------------*/
-
-.lines {
-    position: relative;
-    margin: 0 0 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.first-black-line::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: -50px;
-    width: 30px;
-    height: 3px;
-    background-color: #000000;
-}
-
-.second-black-line::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: -56px;
-    width: 36px;
-    height: 3.5px;
-    background-color: #000000;
-}
-
-.third-black-line::before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: -50px;
-    width: 30px;
-    height: 3px;
-    background-color: #000000;
-}
-
-/*---------Стили бля блока media--------------*/
-
-.main_media {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 150px;
-    margin-bottom: 270px;
-    margin-left: 80px;
-    margin-right: 0px;
-    transform: rotate(-90deg);
-    transform-origin: center;
-    position: relative;
-}
-
-.main_media img{
-    width: 20px;
-    height: 20px;
-    padding-left: 10px;
-}
-
-.main_media_images {
-    margin-left: 90px;
-    margin-top: 18px;
-}
-
-.vertical_black-line::after {
-    content: "";
-    position:absolute;
-    top: 27px;
-    left: 158px;
-    width: 70px;
-    height: 3px;
-    background-color: #000000;
-}
-
-/*-------Стили для блока info----------*/
-
-.main_info {
-    margin-top: 150px;
-    margin-left: 100px;
-    width: 350px;
-}
-
-.main_h4 {
-    margin-left: 6px;
-    margin-bottom: -17px;
-}
-
-.menu_container {
-    position: relative;
-}
-
-.menu_container_title::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: -4px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background-color:#FFA501;
-}
-
-.main_portfolio {
-    background-color: #FFA501;
-}
-
-/*-------Стили для ссылок в блоке nav------*/
-
-.main_nav {
-    margin-top: 40px;
+section {
+  padding: 20px;
 }
 
 .main_nav a{
-    color: "black";
-    text-decoration: none;
-    padding: 12px;
-}
-  
-.main_nav a:visited {
-    color: inherit;
-}
-  
-.main_nav a:hover {
-    color: #ffefcf;
+  color: "black";
+  text-decoration: none;
 }
 
-/*-------------------Стили для article--------------*/
+.main_nav a:visited {
+  color: inherit;
+}
+
+.main_nav a:hover {
+  color: #e3ffeb;
+}
 
 .all-info {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-    margin-right: 15%;
+  display: flex;
+  flex-direction: column;
 }
-  
+
 .all-info li {
-    list-style-type: none;
-}
-  
-.all-info h2 {
-    width: auto;
-    margin: auto;
-}
-  
-
-/*-------------------Стили для блока about-me--------------------*/
-
-.main_img {
-    width: 400px;
-    height: 600px;
-    float: left;
-    margin-right: 15px;
+  list-style-type: none;
 }
 
-.wrapper {
-    margin-left: 50px;
+.all-info h1 {
+  display: table;
+  width: auto;
+  margin: auto;
 }
-
-.about-me {
-    display: flex;
-}
-
-/*---------------Стили для блока about-me (Заголовок)----------------------*/
-
-.about-me_menu_container {
-    position: relative;
-    margin-bottom: -12px;
-    margin-left: 8px;
-}
-
-.about-me_circle::before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -12px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background-color:#FFA501;
-}
-
-.about-me_main-info p:not(:last-child) {
-    margin-bottom: -15px;
-}
-
-/*----------------Стили для блока about-me (Информация)--------------------*/
-
-.about-me_work-info {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about-me_work-info p {
-    margin-top: -15px;
-}
-
-.work-info_container {
-    position: relative;
-    width: 255px;
-    margin-right: 60px;
-    margin-bottom: -15px;
-}
-
-.work-info_container_1 {
-    position: relative;
-    width: 245px;
-    margin-right: 25px;
-    margin-bottom: -15px;
-}
-
-.work-info_circle::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: -4px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background-color:#FFA501;
-}
-
-.work-info_circle_1::before {
-    content: "";
-    position: absolute;
-    top: 18px;
-    left: -54px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background-color:#FFA501;
-}
-
-/*----------Стили для маленьких изображений--------------*/
-
-.work-info_img {
-    margin-top: 30px;
-    margin-left: 9px;
-    width: 30px;
-    height: 30px;
-}
-
-.work-info_img_1 {
-    margin-top: 28px;
-    margin-left: -40.5px;
-    width: 31px;
-    height: 31px;
-}
-
-.work-info_img_2 {
-    margin-top: 30px;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
-}
-
-.web_img {
-    content: "";
-    position: absolute;
-    
-}
-
-.app-dev_img {
-    content: "";
-    position: absolute;
-    
-}
-
-.ux-ui_img {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-}
-
-.work-info_container_text {
-    margin-left: 50px;
-    width: 200px;
-}
-
-
-
-
-
-
-
-
-/*-------С этим пока не работаю-----------*/
-
-  
-.portfolio_works_img {
-    width: 220px;
-    height: 220px;
-    margin-left: 5px;
-    margin-right: 10px;
-    object-fit: cover;
-}  
-  
-.experience-work_container {
-    display: flex;
-    margin-left: 10px;
-    padding: 20px;
-}
-  
-.education_container {
-    display: flex;
-    width: 450px;
-}
-  
-.work_container {
-    display: flex;
-    width: 450px;
-}
-
-.contacts_media img {
-    width: 50px;
-    height: 50px;
-}
-
-/*---------------------Стили для блока skills----------------------*/
-
-
-.skills_container {
-    display: flex;
-}
-  
-.skills_container div {
-    border: 1px solid black;
-    margin-left: 10px;
-    padding: 20px;
-    width: 220px;
-    height: auto;
-}
-  
-.skills_img {
-    width: auto;
-    height: 50px;
-}
-
-/*-------------------------Стили для фигур--------------------------*/
 
 .orange-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FFA501;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFA501;
 }
 
 .small-orange-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #FFA501;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFA501;
 }
 
 .orange-line {
-    width: 50px;
-    height: 3px;
-    background-color: #FFA501;
-    margin-top: 5px;
+  width: 50px;
+  height: 3px;
+  background-color: #FFA501;
+  margin: 50px;
 }
 
 .big-black-line {
-    width: 1px;
-    height: 280px;
-    background-color: #000000;
+  width: 1px;
+  height: 280px;
+  background-color: #000000;
 }
 
 .small-black-line {
-    width: 45px;
-    height: 1px;
-    background-color: #000000;
+  width: 45px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.main_img {
+  width: 400px;
+  height: 600px;
+  float: left;
+  margin-right: 15px;
+}
+
+.portfolio_works_img {
+  width: 220px;
+  height: 220px;
+  margin-left: 5px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.menu_container {
+  display: flex;
+  width: auto;
+  margin: auto;
+}
+
+.menu_container_circle {
+  display: flex;
+}
+
+.experience-work_container {
+  display: flex;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.education_container {
+  display: flex;
+  width: 450px;
+}
+
+.work_container {
+  display: flex;
+  width: 450px;
+}
+
+.skills_container {
+  display: flex;
+}
+
+.skills_container div {
+  border: 1px solid black;
+  margin-left: 10px;
+  padding: 20px;
+  width: 220px;
+  height: auto;
+}
+
+.contacts_media img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills_img {
+  width: auto;
+  height: 50px;
 }
