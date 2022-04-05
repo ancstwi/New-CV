@@ -53,7 +53,6 @@ body {
     background-color: #000000;
 }
 
-
 /*-------Стили для блока info----------*/
 
 .main_info {
@@ -62,7 +61,7 @@ body {
     width: 350px;
 }
 
-.main_h3 {
+.main_h4 {
     margin-left: 6px;
     margin-bottom: -17px;
 }
@@ -74,7 +73,7 @@ body {
 .menu_container_title::before {
     content: "";
     position: absolute;
-    top: 14px;
+    top: -8px;
     left: -4px;
     z-index: -1;
     width: 36px;
@@ -107,51 +106,7 @@ body {
     color: #ffefcf;
 }
 
-
-/*-------------------------Стили для фигур--------------------------*/
-
-
-
-.orange-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FFA501;
-}
-
-.small-orange-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #FFA501;
-}
-
-.orange-line {
-    width: 50px;
-    height: 3px;
-    background-color: #FFA501;
-    margin: 50px;
-}
-
-.big-black-line {
-    width: 1px;
-    height: 280px;
-    background-color: #000000;
-}
-
-.small-black-line {
-    width: 45px;
-    height: 1px;
-    background-color: #000000;
-}
-
-
-/*-------------------Стили для всех блоков section--------------*/
-
-
-section {
-    padding: 20px;
-}
+/*-------------------Стили для article--------------*/
 
 .all-info {
     display: flex;
@@ -172,17 +127,108 @@ section {
 
 /*-------------------Стили для блока about-me--------------------*/
 
-
-.wrapper {
-    display: flex;
-}
-
 .main_img {
     width: 400px;
     height: 600px;
     float: left;
     margin-right: 15px;
 }
+
+.wrapper {
+    margin-left: 50px;
+}
+
+.about-me {
+    display: flex;
+}
+
+/*---------------Стили для блока about-me (Заголовок)----------------------*/
+
+.about-me_menu_container {
+    position: relative;
+    margin-bottom: -12px;
+    margin-left: 8px;
+}
+
+.about-me_circle::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -12px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+.about-me_main-info p:not(:last-child) {
+    margin-bottom: -15px;
+}
+
+/*----------------Стили для блока about-me (Информация)--------------------*/
+
+.about-me_work-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me_work-info p {
+    margin-top: -15px;
+}
+
+.work-info_container {
+    position: relative;
+    width: 255px;
+    margin-right: 60px;
+    margin-bottom: -15px;
+}
+
+.work-info_container_1 {
+    position: relative;
+    width: 245px;
+    margin-right: 25px;
+    margin-bottom: -15px;
+}
+
+.work-info_circle::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -4px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+.work-info_circle_1::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -54px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+.work-info_container_text {
+    margin-left: 50px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+/*-------С этим пока не работаю-----------*/
+
   
 .portfolio_works_img {
     width: 220px;
@@ -191,18 +237,6 @@ section {
     margin-right: 10px;
     object-fit: cover;
 }  
-  
-
-
-.menu_container {
-    display: flex;
-    width: auto;
-    margin: auto;
-}
-  
-.menu_container_circle {
-    display: flex;
-}
   
 .experience-work_container {
     display: flex;
@@ -243,4 +277,39 @@ section {
 .skills_img {
     width: auto;
     height: 50px;
+}
+
+/*-------------------------Стили для фигур--------------------------*/
+
+.orange-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FFA501;
+}
+
+.small-orange-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FFA501;
+}
+
+.orange-line {
+    width: 50px;
+    height: 3px;
+    background-color: #FFA501;
+    margin-top: 5px;
+}
+
+.big-black-line {
+    width: 1px;
+    height: 280px;
+    background-color: #000000;
+}
+
+.small-black-line {
+    width: 45px;
+    height: 1px;
+    background-color: #000000;
 }
