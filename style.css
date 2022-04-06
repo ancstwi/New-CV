@@ -102,6 +102,7 @@ body {
     margin-left: 10px;
     margin-bottom: -17px;
     position: relative;
+    z-index: 1;
 }
 
 .main_h4::before {
