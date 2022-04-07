@@ -1,29 +1,38 @@
+/*--------------------Стили для всей страницы-------------------*/
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Нужен для того, чтобы фоновое изображение растягивалось на всю ширину */
+}
+
+section {
+    margin-top: 10%;  /*Отступ между разными sections, чтобы они не слипались друг с другом*/
+}
+
 /*--------------------Стили для блока header--------------------*/
 
 header {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-image: url(src/Background/Background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-}
-  
-body {
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
 }
 
 .main {
     display: flex;
 }
 
-/*----------Стили для header (Три черных полосы)---------------------*/
+.main_div {
+    display: flex;
+    margin-top: 20vh; 
+}
+
+/*----------Стили для header (Три черные линии)---------------------*/
 
 .lines {
-    margin: 0 0 0 auto;
-    display: flex;
-    flex-direction: column;
+    margin: 0 0 0 auto; /* Смещает черные линии к правому краю страницы */    
 }
 
 .black-line {
@@ -57,34 +66,36 @@ body {
 
 /*---------Стили бля блока media--------------*/
 
-.main_media {
+
+.main_media { 
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: 150px;
-    margin-bottom: 270px;
-    margin-left: 80px;
-    margin-right: 0px;
+    flex-direction: row;
+    margin-left: -100px;
+    margin-top: 0px;
     transform: rotate(-90deg);
-    transform-origin: center;
-    position: relative;
+    max-height: 120px;
+    position: relative; 
+    width: 350px; 
+}
+
+.main_media p {
+    max-width: 155px;
+    margin-right: 100px;
 }
 
 .main_media img{
-    width: 20px;
-    height: 20px;
-    padding-left: 10px;
-}
+    width: 15px;
+    height: 15px;
+    margin-top: 5.5px;
+    margin-right: 10px;
+    transform: rotate(90deg);  
+} 
 
-.main_media_images {
-    margin-left: 90px;
-    margin-top: 18px;
-}
-
-.vertical_black-line::after {
+.main_media::after {
     content: "";
     position:absolute;
-    top: 27px;
-    left: 158px;
+    top: 12px;
+    left: 155px;
     width: 70px;
     height: 3px;
     background-color: #000000;
@@ -93,14 +104,12 @@ body {
 /*-------Стили для блока info----------*/
 
 .main_info {
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-left: 150px; /*Задаем отступ от предыдущего блока*/
     width: 350px;
 }
 
 .main_h4 {
-    margin-left: 10px;
-    margin-bottom: -17px;
+    margin-left: 10px; /*Выравниваем внутри блока второстепенный заголовок*/
     position: relative;
     z-index: 1;
 }
@@ -129,13 +138,13 @@ body {
 /*-------Стили для ссылок в блоке nav------*/
 
 .main_nav {
-    margin-top: 40px;
+    margin-top: 40px;   /*Отодвигаем блок кнопок от заголовка*/
 }
 
 .main_nav a{
     color: "black";
     text-decoration: none;
-    padding: 13px 26px;
+    padding: 13px 26px;  /*Задаем отступы от текста внутри кнопки*/ 
 }
   
 .main_nav a:visited {
@@ -151,7 +160,7 @@ body {
 .all-info {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 15%;    /*Задаем отступы справа и слева для body*/
     margin-right: 15%;
 }
   
@@ -161,21 +170,17 @@ body {
   
 .all-info h2 {
     width: auto;
-    margin: auto;
 }
-  
 
-/*-------------------Стили для блока about-me--------------------*/
+/*-------------------Стили для всего блока about-me--------------------*/
 
 .main_img {
     width: 400px;
     height: 600px;
-    float: left;
-    margin-right: 15px;
 }
 
 .wrapper {
-    margin-left: 50px;
+    margin-left: 80px; /*Отодвигаем блок текста от изображения*/
 }
 
 .about-me {
@@ -184,26 +189,27 @@ body {
 
 /*---------------Стили для блока about-me (Заголовок)----------------------*/
 
-.about-me_menu_container {
-    position: relative;
-    margin-bottom: -12px;
-    margin-left: 8px;
+.about-me_menu {
+    padding-top: 6px; /*Увеличиваем отступы в заголовке*/
+    padding-bottom: 20px;
 }
 
-.about-me_menu_container::before {
+.about-me_menu_h4 {
+    position: relative;
+    padding-bottom: 12px;   /*Смещаем маленький заголовок внутри блока*/
+    padding-left: 8px;
+}
+
+.about-me_menu_h4::before {
     content: "";
     position: absolute;
     top: -7px;
-    left: -12px;
+    left: -3px;
     z-index: -1;
     width: 36px;
     height: 36px;
     border-radius: 100%;
     background-color:#FFA501;
-}
-
-.about-me_main-info p:not(:last-child) {
-    margin-bottom: -15px;
 }
 
 /*----------------Стили для блока about-me (Информация)--------------------*/
@@ -214,27 +220,23 @@ body {
 }
 
 .about-me_work-info p {
-    margin-top: -15px;
+    margin-top: 20px;   /*Задаем отступы для текста внутри блоков p */
 }
 
 .work-info_container {
     position: relative;
-    width: 255px;
-    margin-right: 60px;
-    margin-bottom: -15px;
+    width: 270px;
 }
 
 .work-info_container_1 {
     position: relative;
-    width: 245px;
-    margin-right: 25px;
-    margin-bottom: -15px;
+    width: 270px;
 }
 
-.work-info_circle::before {
+.work-info_container::before {
     content: "";
     position: absolute;
-    top: 18px;
+    top: 20px;
     left: -4px;
     z-index: -1;
     width: 36px;
@@ -243,11 +245,11 @@ body {
     background-color:#FFA501;
 }
 
-.work-info_circle_1::before {
+.work-info_container_1::before {
     content: "";
     position: absolute;
-    top: 18px;
-    left: -54px;
+    top: 20px;
+    left: -4px;
     z-index: -1;
     width: 36px;
     height: 36px;
@@ -255,53 +257,50 @@ body {
     background-color:#FFA501;
 }
 
+.work-info_container_text {
+    padding-top: 25px; /*Смещаем названия отделов внутри их блоков*/
+    margin-left: 50px;   /*Смещаем сами блоки относительно друг друга*/
+    width: 200px;
+}
+
+
 /*----------Стили для маленьких изображений--------------*/
 
 .work-info_img {
-    margin-top: 30px;
+    margin-top: 32px;   /*Двигаем блок картинки на его место*/
     margin-left: 9px;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 .work-info_img_1 {
-    margin-top: 28px;
-    margin-left: -40.5px;
-    width: 31px;
-    height: 31px;
+    margin-top: 32px;  /*Двигаем блок картинки на его место*/
+    margin-left: 9px;
+    width: 20px;
+    height: 28px;
 }
 
 .work-info_img_2 {
-    margin-top: 30px;
+    margin-top: 32px;  /*Двигаем блок картинки на его место*/
     margin-left: 10px;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 .web_img {
     content: "";
     position: absolute;
-    
 }
 
 .app-dev_img {
     content: "";
     position: absolute;
-    
 }
 
 .ux-ui_img {
     content: "";
     position: absolute;
-    width: 40px;
-    height: 40px;
 }
-
-.work-info_container_text {
-    margin-left: 50px;
-    width: 200px;
-}
-
 
 
 
@@ -343,7 +342,6 @@ body {
 
 /*---------------------Стили для блока skills----------------------*/
 
-
 .skills_container {
     display: flex;
 }
@@ -381,7 +379,7 @@ body {
     width: 50px;
     height: 3px;
     background-color: #FFA501;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .big-black-line {
