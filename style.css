@@ -10,6 +10,8 @@ section {
     margin-top: 10%;  /*Отступ между разными sections, чтобы они не слипались друг с другом*/
 }
 
+
+
 /*--------------------Стили для блока header--------------------*/
 
 header {
@@ -28,6 +30,8 @@ header {
     display: flex;
     margin-top: 20vh; 
 }
+
+
 
 /*----------Стили для header (Три черные линии)---------------------*/
 
@@ -63,6 +67,8 @@ header {
     height: 3px;
     background-color: #000000;
 }
+
+
 
 /*---------Стили бля блока media--------------*/
 
@@ -100,6 +106,8 @@ header {
     background-color: #000000;
 }
 
+
+
 /*-------Стили для блока info----------*/
 
 .main_info {
@@ -134,6 +142,8 @@ header {
     background-color: #ff7801;
 }
 
+
+
 /*-------Стили для ссылок в блоке nav------*/
 
 .main_nav {
@@ -154,6 +164,8 @@ header {
     color: #ffefcf;
 }
 
+
+
 /*-------------------Стили для article--------------*/
 
 .all-info {
@@ -171,6 +183,8 @@ header {
     width: auto;
 }
 
+
+
 /*-------------------Стили для всего блока about-me--------------------*/
 
 .main_img {
@@ -185,6 +199,8 @@ header {
 .about-me {
     display: flex;
 }
+
+
 
 /*---------------Стили для блока about-me (Заголовок)----------------------*/
 
@@ -210,6 +226,8 @@ header {
     border-radius: 100%;
     background-color:#FFA501;
 }
+
+
 
 /*----------------Стили для блока about-me (Информация)--------------------*/
 
@@ -263,6 +281,7 @@ header {
 }
 
 
+
 /*----------Стили для маленьких изображений--------------*/
 
 .work-info_img {
@@ -303,8 +322,270 @@ header {
 
 
 
+/*-----------Стили для всех последующих заголовков------------*/
+
+.menu {
+    position: relative;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.menu h2 {
+    padding-top: 15px;
+}
+
+/*-----Большой оранжевый круг у заголовка---------*/
+
+.menu::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 48.4%;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+/*-----Маленькая оранжевая линия под заголовками----------*/
+
+.menu::after {
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 48%;
+    z-index: -1;
+    width: 50px;
+    height: 3px;
+    background-color:#FFA501;
+}
 
 
+
+/*-----------Стили для блока experience-------------*/
+
+.education-work {
+    display: flex;
+    padding-left: 80px;
+}
+
+.education-work h4 {
+    margin-bottom: 40px;
+}
+
+.education-work p {
+    padding-top: 22px;
+}
+
+.education-work li {
+    padding-bottom: 50px;
+    position: relative;
+    height: 200px;
+    width: 90%;
+}
+
+/*-----Большие оранжевые круги у каждого блока--------*/
+
+.education-work li::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+/*-----Черные горизонтальные линии у каждого блока--------*/
+
+.education-work li::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -42px;
+    z-index: -2;
+    width: 42px;
+    height: 0.8px;
+    background-color: #000000;
+}
+
+.education-work h4 {
+    position: relative;
+}
+
+/*------Маленькие оранжевые круги у подзаголовков-------*/
+
+.education-work h4::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -49px;
+    z-index: -1;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+/*------Большие вертикальные линии у подзаголовков----------*/
+
+.education-work h4::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -42px;
+    z-index: -2;
+    width: 0.8px;
+    height: 1610%;
+    background-color: #000000;
+}
+
+.education-work h5, h6 {
+    padding-left: 55px;
+}
+
+/*------------Стили для блока exprience: education--------------------*/
+
+.experience_education {
+    margin-right: 12%;
+}
+
+.education_info {
+    display: flex;
+    width: 400px;
+}
+
+/*------------Стили для блока experience: work----------------*/
+
+.work_info {
+    display: flex;
+    width: 400px;
+}
+
+
+
+/*-----------Стили для маленьких изображений----------------*/
+
+.ed_img_1 {
+    margin-top: 13px;   /*Двигаем блок картинки на его место*/
+    margin-left: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+.ed_img_2 {
+    margin-top: 12px;  /*Двигаем блок картинки на его место*/
+    margin-left: 13px;
+    width: 28px;
+    height: 28px;
+}
+
+.w_img_1 {
+    margin-top: 12px;  /*Двигаем блок картинки на его место*/
+    margin-left: 14px;
+    width: 28px;
+    height: 28px;
+}
+
+.w_img_2 {
+    margin-top: 14px;  /*Двигаем блок картинки на его место*/
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+.education_img_1 {
+    content: "";
+    position: absolute;
+}
+
+.education_img_2 {
+    content: "";
+    position: absolute;
+}
+
+.work_img_1 {
+    content: "";
+    position: absolute;
+}
+
+.work_img_2 {
+    content: "";
+    position: absolute;
+}
+
+
+
+/*---------------------Стили для блока skills----------------------*/
+
+.skills_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+  
+.skills_container div {
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 20px;
+    width: 250px;
+    height: 290px;
+}
+
+.skills_container h5 {
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.skills_img {
+    width: auto;
+    height: 50px;
+}
+
+/*-----------Стили для нижних блоков со шкалой процентов------------------*/
+
+.skills_scale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills_scale div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 30px;
+    height: 100px;
+    padding-left: 15px;
+}
+
+.skills_scale div::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+
+
+/*-------------------------Стили для фигур--------------------------*/
+
+.orange-line {
+    width: 50px;
+    height: 3px;
+    background-color: #FFA501;
+    margin-top: 8px;
+}
 
 
 /*-------С этим пока не работаю-----------*/
@@ -318,77 +599,7 @@ header {
     object-fit: cover;
 }  
   
-.experience-work_container {
-    display: flex;
-    margin-left: 10px;
-    padding: 20px;
-}
-  
-.education_container {
-    display: flex;
-    width: 450px;
-}
-  
-.work_container {
-    display: flex;
-    width: 450px;
-}
-
 .contacts_media img {
     width: 50px;
     height: 50px;
-}
-
-/*---------------------Стили для блока skills----------------------*/
-
-.skills_container {
-    display: flex;
-}
-  
-.skills_container div {
-    border: 1px solid black;
-    margin-left: 10px;
-    padding: 20px;
-    width: 220px;
-    height: auto;
-}
-  
-.skills_img {
-    width: auto;
-    height: 50px;
-}
-
-/*-------------------------Стили для фигур--------------------------*/
-
-.orange-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FFA501;
-}
-
-.small-orange-circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #FFA501;
-}
-
-.orange-line {
-    width: 50px;
-    height: 3px;
-    background-color: #FFA501;
-    margin-top: 8px;
-}
-
-.big-black-line {
-    width: 1px;
-    height: 280px;
-    background-color: #000000;
-}
-
-.small-black-line {
-    width: 45px;
-    height: 1px;
-    background-color: #000000;
 }
