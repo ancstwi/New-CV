@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <!------Правый блок - три черные полосы------------------->
+        <!----------Правый блок - три черные полосы------------------->
         <div class="lines">
             <div class="black-line"></div>
         </div>
@@ -44,15 +44,13 @@
     <article class="all-info">
         <!-----------Блок Про меня------------>
         <section class="about-me" id="about-me">
-            <img src="src/Photo/pic1.jpg" alt="Красивая картинка 1" class="main_img">
+            <img src="src/Photo/pic1.png" alt="Красивая картинка 1" class="main_img">
             <div class="wrapper">
 
-                <!----------Заголовок----------->
+                <!-------------Заголовок-------------->
                 <div class="about-me_menu">
                     <h4 class="about-me_menu_h4">Про меня</h4>
-                    <h2>Меня зовут Анастасия</h2>
-                    <div class="orange-line">
-                    </div>
+                    <h2 class="about-me_menu_h2">Меня зовут Анастасия</h2>
                 </div>
                 
                 <!---------------Информация----------------->
@@ -211,93 +209,148 @@
             <!--------------Нижние блоки со шкалой процентов---------------------->
 
             <div class="skills_scale">
-                <div class="sites">
-                    <h5 class="sites_h5">Создание сайтов</h5>
-                    <p class="sites_p">100%</p>
+                <div class="skills_sites">
+                    <h5 class="skills_sites_h5">Создание сайтов</h5>
+                    <p class="skills_sites_p">100%</p>
                 </div>
-                <div class="apps">
-                    <h5 class="apps_h5">Создание приложений</h5>
-                    <p class="sites_p">85%</p>
+                <div class="skills_apps">
+                    <h5 class="skills_apps_h5">Создание приложений</h5>
+                    <p class="skills_sites_p">85%</p>
                 </div>
-                <div class="data">
-                    <h5 class="data_h5">Работа с данными</h5>
-                    <p class="data_p">90%</p>
+                <div class="skills_data">
+                    <h5 class="skills_data_h5">Работа с данными</h5>
+                    <p class="skills_data_p">90%</p>
                 </div>
-                <div class="creativity">
-                    <h5 class="creativity_h5">Креативность</h5>
-                    <p class="creativity_p">75%</p>
+                <div class="skills_creativity">
+                    <h5 class="skills_creativity_h5">Креативность</h5>
+                    <p class="skills_creativity_p">75%</p>
                 </div>
-                <div class="design">
-                    <h5 class="design_h5">Создание дизайна</h5>
-                    <p class="design_p">90%</p>
+                <div class="skills_design">
+                    <h5 class="skills_design_h5">Создание дизайна</h5>
+                    <p class="skills_design_p">90%</p>
                 </div>
-                <div class="soft-skills">
-                    <h5 class="soft-skills_h5">Soft skills</h5>
-                    <p class="soft-skills_p">95%</p>
+                <div class="skills_soft-skills">
+                    <h5 class="skills_soft-skills_h5">Soft skills</h5>
+                    <p class="skills_soft-skills_p">95%</p>
                 </div>
             </div>
         </section>
 
-        <section class="questions">
-            <p>1. Вопрос по поводу шести нижних блоков со шкалой процентов. Я делала их через before и after, но может быть, есть возможность сделать их по-другому, с помощью специальных тегов? Можно ли настроить автозаполнение шкалы в зависимости от процента, который ей задан?</p>
-            <p>2. Небольшой вопрос по поводу гита, у меня часто возникает проблема, что изменения, которые я загрузила, какое-то время визуально на сайте не отображаются, приходится ждать или загружать файлы несколько раз. От чего это зависит, нужно в настройках что-то изменить?</p>
-        </section>
 
-
-        <!---------------
+        <!---------------------Блок Портфолио----------------------->        
 
         <section class="portfolio" id="portfolio">
-            <div class="menu_container">
-                <div class="menu_container_circle">
-                    <div class="orange-circle">
-                    </div>
-                    <h3>Портфолио</h3>
-                </div>
-                <h2>Мои работы</h2>
-                <div class="orange-line">
-                </div>
+            <div class="menu">
+                <h4 class="portfolio_menu_h4">Портфолио</h4>
+                <h2 class="portfolio_menu_h2">Мои работы</h2>
             </div>
             <div class="portfolio_works">
-                <img src="src/TravelCatalog.jpg" alt="TravelCatalog" class="portfolio_works_img">
-                <img src="src/BotTransport.jpg" alt="BotTransport" class="portfolio_works_img">
-                <img src="src/Picture1.jpg" alt="Красивая картинка 1" class="portfolio_works_img">
-                <img src="src/Picture2.jpg" alt="Красивая картинка 2" class="portfolio_works_img">
+                <img src="src/Photo/uber.png" alt="uber" class="portfolio_works_img uber">
+                <img src="src/Photo/pulse.png" alt="pulse" class="portfolio_works_img pulse">
+                <img src="src/Photo/bread.png" alt="bread" class="portfolio_works_img bread">
+                <img src="src/Photo/ipad.png" alt="ipad" class="portfolio_works_img ipad">
+                <img src="src/Photo/mac.png" alt="mac" class="portfolio_works_img mac">
+                <img src="src/Photo/plans.png" alt="plans" class="portfolio_works_img plans">
             </div>
         </section>  
 
 
-        <section class="contacts" id="contacts">
-            <img src="src/pic1.jpg" alt="Красивая картинка 2" class="main_img">
-            <div class="menu_container">
-                <div class="menu_container_circle">
-                    <div class="orange-circle">
+
+        <!------------------Блок Прайс-лист----------------------->
+
+        <section class="price-list" id="price-list">
+
+            <!--------------Заголовок------------------>
+            <div class="menu_price">
+                <h4 class="price-list_menu_h4">Прайс-лист</h4>
+            </div>
+
+            <!------------Стоимость услуг---------------->
+            <div class="price-list_prices">
+                <div class="landing prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="landing_h5">Landing-page</h5>
+                        <h5 class="langing_price_h5">от 8000 руб.</h5>
                     </div>
-                    <h3>Контакты</h3>
+                    <h6 class="langing_p">Одностраничный сайт для презентации услуг/товаров/...</h6>
                 </div>
-                <h2>Свяжитесь со мной</h2>
-                <div class="orange-line">
+                <div class="web prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="web_h5">Web-приложение</h5>
+                        <h5 class="web_price_h5">от 28000 руб.</h5>
+                    </div>
+                    <h6 class="web_p">Приложение внутри браузера для лучшего комфорта</h6>
+                </div>
+                <div class="site prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="site_h5">Корпоративный сайт</h5>
+                        <h5 class="site_price_h5">от 20000 руб.</h5>
+                    </div>
+                    <h6 class="site_p">Сайт для вашего бизнеса или компании</h6>
+                </div>
+                <div class="app prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="app_h5">Android/IOS Приложение</h5>
+                        <h5 class="app_price_h5">от 25000 руб.</h5>
+                    </div>
+                    <h6 class="app_p">Приложение для смартфона любой ОС</h6>
+                </div>
+                <div class="shop prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="shop_h5">Интернет-магазин</h5>
+                        <h5 class="shop_price_h5">от 30000 руб.</h5>
+                    </div>
+                    <h6 class="shop_p">Инструмент для ваших продаж в сети</h6>
+                </div>
+                <div class="price-list_design prices">
+                    <div class="price-list_h5-div">
+                        <h5 class="price-list_design_h5">Дизайн</h5>
+                        <h5 class="price-list_design_price_h5">Индивидуально</h5>
+                    </div>
+                    <h6 class="price-list_design_p">Создам дизайн для вашего сайта/приложения...</h6>
                 </div>
             </div>
-            <div class="contacts_media">
-                <h3>Социальные сети:</h3>
-                <a href = "https://vk.com/ancstwi"><img src = "src/vk.png" alt="Вконтакте"></a>
-                <a href = "https://t.me/ancstwi"><img src = "src/telegram.png" alt="Телеграмм"></a>
-                <a href = "https://www.instagram.com/ancstwi"><img src = "src/instagram.png" alt="Инстаграм"></a>
-                <a href = "https://vm.tiktok.com/ZSdLGKkCH/"><img src = "src/tiktok.png" alt="Тикток"></a>
-                <a href = "https://youtu.be/dQw4w9WgXcQ"><img src = "src/youtube.png" alt="Ютуб"></a>
-            </div>
-            <div class="contacts_call-me">
-                <h3>Как со мной связаться:</h3>
-                <ul class="contacts_call-me_ul">
-                    <li>Телефон: 89170245787</li>
-                    <li>Почта: nastmukh@gmail.com</li>
-                </ul>
-            <div>
         </section>
 
-    -------->
+ <!----------------Блок Контакты--------------------------->
 
-    </article>
+        <section class="contacts" id="contacts">
+            <img src="src/Photo/pic1.png" alt="Красивая картинка 2" class="main_img">
+            <div class="contacts_wrapper">
+                <div class="contacts_menu">
+                    <h4 class="contacts_menu_h4">Контакты</h4>
+                    <h2 class="contacts_menu_h2">Свяжитесь со мной</h2>
+                </div>
+                <h4 class="contacts_h4-1">Любым удобным для вас способом:</h4>
+                <div class="contacts_media">
+                    <img src = "src/Icons/Contacts/Facebook.svg" alt="Фейсбук" class="contacts_media_images"> 
+                    <img src = "src/Icons/Contacts/Telegram.svg" alt="Телеграмм" class="contacts_media_images">
+                    <img src = "src/Icons/Contacts/Instagram.svg" alt="Инстаграм" class="contacts_media_images">
+                </div>
+                <h4 class="contacts_h4-2">Или оставьте ваши данные и я сама вам напишу:</h4>
+
+                <!-----------Текстовые поля для ввода информации------------------->
+                <div class="form">
+                    <div class="name_div floating">
+                        <input class="name_input" type="username" id="username" name="username">
+                        <label class="name_label" for="username">Ваше имя</label>
+                    </div>
+                    <div class="mail_div floating">
+                        <input class="mail_input" type="mail" id="mail" name="mail">
+                        <label class="mail_label" for="mail">Ваша почта</label>
+                    </div>
+                    <div class="message_div floating">
+                        <input class="message_input" type="message" id="message" name="message">
+                        <label class="message_label" for="message">Ваше сообщение</label>
+                    </div>
+                </div>
+                <div class="contacts_button">
+                    <a href="#" class="contacts_button_send"><b>Отправить сообщение</b></a>
+                </div>
+            </div>
+        </section>
+
+</article>
 
 </body>
 </html>

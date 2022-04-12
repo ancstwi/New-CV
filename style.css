@@ -3,11 +3,11 @@
 body {
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    margin: 0; /* Нужен для того, чтобы фоновое изображение растягивалось на всю ширину */
+    margin: 0; 
 }
 
 section {
-    margin-top: 10%;  /*Отступ между разными sections, чтобы они не слипались друг с другом*/
+    margin-top: 10%;  
 }
 
 
@@ -36,7 +36,7 @@ header {
 /*----------Стили для header (Три черные линии)---------------------*/
 
 .lines {
-    margin: 0 0 0 auto; /* Смещает черные линии к правому краю страницы */    
+    margin: 0 0 0 auto;     
 }
 
 .black-line {
@@ -111,12 +111,12 @@ header {
 /*-------Стили для блока info----------*/
 
 .main_info {
-    margin-left: 150px; /*Задаем отступ от предыдущего блока*/
+    margin-left: 150px; 
     width: 350px;
 }
 
 .main_h4 {
-    margin-left: 10px; /*Выравниваем внутри блока второстепенный заголовок*/
+    margin-left: 10px; 
     position: relative;
     z-index: 1;
 }
@@ -147,13 +147,13 @@ header {
 /*-------Стили для ссылок в блоке nav------*/
 
 .main_nav {
-    margin-top: 40px;   /*Отодвигаем блок кнопок от заголовка*/
+    margin-top: 40px;  
 }
 
 .main_nav a{
     color:inherit;
     text-decoration: none;
-    padding: 13px 26px;  /*Задаем отступы от текста внутри кнопки*/ 
+    padding: 13px 26px; 
 }
   
 .main_nav a:visited {
@@ -171,7 +171,7 @@ header {
 .all-info {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;    /*Задаем отступы справа и слева для body*/
+    margin-left: 15%;
     margin-right: 15%;
 }
   
@@ -193,7 +193,7 @@ header {
 }
 
 .wrapper {
-    margin-left: 80px; /*Отодвигаем блок текста от изображения*/
+    margin-left: 80px; 
 }
 
 .about-me {
@@ -205,13 +205,13 @@ header {
 /*---------------Стили для блока about-me (Заголовок)----------------------*/
 
 .about-me_menu {
-    padding-top: 6px; /*Увеличиваем отступы в заголовке*/
-    padding-bottom: 20px;
+    padding-top: 6px; 
+    padding-bottom: 40px;
 }
 
 .about-me_menu_h4 {
     position: relative;
-    padding-bottom: 12px;   /*Смещаем маленький заголовок внутри блока*/
+    padding-bottom: 12px;  
     padding-left: 8px;
 }
 
@@ -227,17 +227,26 @@ header {
     background-color:#FFA501;
 }
 
-
+.about-me_menu_h4::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 50px;
+    height: 3px;
+    background-color: #FFA501;
+}
 
 /*----------------Стили для блока about-me (Информация)--------------------*/
 
 .about-me_work-info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about-me_work-info p {
-    margin-top: 20px;   /*Задаем отступы для текста внутри блоков p */
+    margin-top: 20px; 
 }
 
 .work-info_container {
@@ -275,8 +284,8 @@ header {
 }
 
 .work-info_container_text {
-    padding-top: 25px; /*Смещаем названия отделов внутри их блоков*/
-    margin-left: 50px;   /*Смещаем сами блоки относительно друг друга*/
+    padding-top: 25px; 
+    margin-left: 50px;   
     width: 200px;
 }
 
@@ -285,21 +294,21 @@ header {
 /*----------Стили для маленьких изображений--------------*/
 
 .work-info_img {
-    margin-top: 32px;   /*Двигаем блок картинки на его место*/
+    margin-top: 32px;   
     margin-left: 9px;
     width: 28px;
     height: 28px;
 }
 
 .work-info_img_1 {
-    margin-top: 32px;  /*Двигаем блок картинки на его место*/
+    margin-top: 32px;  
     margin-left: 9px;
     width: 20px;
     height: 28px;
 }
 
 .work-info_img_2 {
-    margin-top: 32px;  /*Двигаем блок картинки на его место*/
+    margin-top: 32px;  
     margin-left: 10px;
     width: 28px;
     height: 28px;
@@ -368,6 +377,8 @@ header {
 .education-work {
     display: flex;
     padding-left: 80px;
+    margin: 0 auto;
+    justify-content: space-around;
 }
 
 .education-work h4 {
@@ -443,7 +454,11 @@ header {
     background-color: #000000;
 }
 
-.education-work h5, h6 {
+.education-work h5 {
+    padding-left: 55px;
+}
+
+.education-work h6 {
     padding-left: 55px;
 }
 
@@ -465,33 +480,31 @@ header {
     width: 400px;
 }
 
-
-
 /*-----------Стили для маленьких изображений----------------*/
 
 .ed_img_1 {
-    margin-top: 13px;   /*Двигаем блок картинки на его место*/
+    margin-top: 13px;  
     margin-left: 12px;
     width: 28px;
     height: 28px;
 }
 
 .ed_img_2 {
-    margin-top: 12px;  /*Двигаем блок картинки на его место*/
+    margin-top: 12px;  
     margin-left: 13px;
     width: 28px;
     height: 28px;
 }
 
 .w_img_1 {
-    margin-top: 12px;  /*Двигаем блок картинки на его место*/
+    margin-top: 12px;  
     margin-left: 14px;
     width: 28px;
     height: 28px;
 }
 
 .w_img_2 {
-    margin-top: 14px;  /*Двигаем блок картинки на его место*/
+    margin-top: 14px;  
     margin-left: 10px;
     width: 28px;
     height: 28px;
@@ -552,6 +565,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .skills_scale div {
@@ -580,11 +594,11 @@ header {
 
 /*----------Шкала для Создания сайтов------------*/
 
-.sites {
+.skills_sites {
     position: relative;
 }
 
-.sites::before {
+.skills_sites::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -598,11 +612,11 @@ header {
 
 /*-----------Шкала для Создания приложений------------*/
 
-.apps {
+.skills_apps {
     position: relative;
 }
 
-.apps::before {
+.skills_apps::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -614,7 +628,7 @@ header {
     background-color:#FFA501;
 }
 
-.apps::after {
+.skills_apps::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -623,16 +637,16 @@ header {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    background-color:#dddad6;
+    background-color:#E8E4DE;
 }
 
 /*---------Шкала для Работы с данными----------*/
 
-.data {
+.skills_data {
     position: relative;
 }
 
-.data::before {
+.skills_data::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -644,7 +658,7 @@ header {
     background-color:#FFA501;
 }
 
-.data::after {
+.skills_data::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -653,16 +667,16 @@ header {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    background-color:#dddad6;
+    background-color:#E8E4DE;
 }
 
 /*------------Шкала для Креативности---------------*/
 
-.creativity {
+.skills_creativity {
     position: relative;
 }
 
-.creativity::before {
+.skills_creativity::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -674,7 +688,7 @@ header {
     background-color:#FFA501;
 }
 
-.creativity::after {
+.skills_creativity::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -683,16 +697,16 @@ header {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    background-color:#dddad6;
+    background-color:#E8E4DE;
 }
 
 /*---------Шкала для Создания дизайна----------*/
 
-.design {
+.skills_design {
     position: relative;
 }
 
-.design::before {
+.skills_design::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -704,7 +718,7 @@ header {
     background-color:#FFA501;
 }
 
-.design::after {
+.skills_design::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -713,16 +727,16 @@ header {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    background-color:#dddad6;
+    background-color:#E8E4DE;
 }
 
 /*---------Шкала для Soft Skills-----------*/
 
-.soft-skills {
+.skills_soft-skills {
     position: relative;
 }
 
-.soft-skills::before {
+.skills_soft-skills::before {
     content: "";
     position: absolute;
     top: 50px;
@@ -734,7 +748,7 @@ header {
     background-color:#FFA501;
 }
 
-.soft-skills::after {
+.skills_soft-skills::after {
     content: "";
     position: absolute;
     top: 50px;
@@ -743,33 +757,373 @@ header {
     width: 100%;
     height: 10px;
     border-radius: 4px;
-    background-color:#dddad6;
+    background-color:#E8E4DE;
 }
 
 
 
-/*-------------------------Стили для фигур--------------------------*/
+/*--------------Стили для блока Портфолио------------------*/
 
-.orange-line {
+.portfolio_works {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: (4, 220px);
+    grid-template-rows: (2, 220px);
+    grid-template-areas: 
+        "uber pulse bread plans"
+        "ipad mac mac plans";
+}
+
+.uber { 
+    grid-area: uber; 
+}
+
+.pulse { 
+    grid-area: pulse; 
+}
+
+.bread { 
+    grid-area: bread; 
+}
+
+.ipad { 
+    grid-area: ipad; 
+}
+
+.mac { 
+    grid-area: mac; 
+}
+
+.plans {
+    grid-area: plans;
+}
+
+/*--------------------Блок Прайс-лист------------------------*/
+
+.price-list_prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price-list_h5-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    width: 40%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/*--------Маленькие оранжевые круги у подзаголовков----------*/
+
+.prices::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+/*------------Стили для меню блока Прайс-лист--------------*/
+
+.menu_price {
+    position: relative;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.menu_price h2 {
+    padding-top: 15px;
+}
+
+/*-----Большой оранжевый круг у заголовка---------*/
+
+.menu_price::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 48.4%;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+/*-----Маленькая оранжевая линия под заголовка----------*/
+
+.menu_price::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 47.8%;
+    z-index: -1;
+    width: 50px;
+    height: 3px;
+    background-color:#FFA501;
+}
+
+
+
+/*------------------Стили для блока Контакты---------------------------*/
+
+.contacts {
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.contacts_media {
+    display: flex;
+}
+
+.contacts_media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts_wrapper {
+    margin-left: 80px; 
+    width: 70%;
+}
+
+/*-------------Заголовок блока Контакты----------------*/
+
+.contacts_menu {
+    padding-top: 6px; 
+    padding-bottom: 40px;
+}
+
+.contacts_menu_h4 {
+    position: relative;
+    padding-bottom: 12px;   
+    padding-left: 8px;
+}
+
+.contacts_menu_h4::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -3px;
+    z-index: -1;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color:#FFA501;
+}
+
+.contacts_menu_h4::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0px;
     width: 50px;
     height: 3px;
     background-color: #FFA501;
-    margin-top: 8px;
 }
 
+/*-----------Стили для форм-------------------*/
 
-/*-------С этим пока не работаю-----------*/
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
 
+.form div {
+    margin-bottom: 20px;
+}
+
+.floating {
+    position: relative;
+}
+
+/*----------Стили для текстового поля Ваше Имя-----------*/
+
+.name_div {
+    width: 48%;
+}
+
+.name_input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+.floating .name_input {
+    height: 45px;
+}
+
+.floating .name_label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.floating .name_input:focus~.name_label,
+.floating .name_input:not(:placeholder-shown)~.name_label {
+    top: 0;
+    transform: translateY(-50%) scale(0.75);
+}
+
+/*-------------Стили для текстового поля Ваша почта--------------*/
+
+.mail_div {
+    width: 48%;
+}
+
+.floating .mail_input {
+    height: 45px;
+}
+
+.mail_input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+.floating .mail_label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.floating .mail_input:focus~.mail_label,
+.floating .mail_input:not(:placeholder-shown)~.mail_label {
+    top: 0;
+    transform: translateY(-50%) scale(0.75);
+}
+
+/*--------Стили для текстового поля Ваше сообщение--------------*/
+
+.message_div {
+    width: 100%;
+}
+
+.floating .message_input {
+    height: 190px;
+}
+
+.message_input {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+.floating .message_label {
+    position: absolute;
+    top: 50%;
+    left: 0.3125rem;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.floating .message_input:focus~.message_label,
+.floating .message_input:not(:placeholder-shown)~.message_label {
+    top: 0;
+    transform: translateY(-50%) scale(0.75);
+}
+
+/*---------Стили для кнопки Отправить сообщение----------*/
+
+.contacts_button {
+    margin-top: 30px;   
+}
+
+.contacts_button a{
+    color:inherit;
+    text-decoration: none;
+    padding: 13px 26px;  
+}
   
-.portfolio_works_img {
-    width: 220px;
-    height: 220px;
-    margin-left: 5px;
-    margin-right: 10px;
-    object-fit: cover;
-}  
+.contacts_button a:visited {
+    color: inherit;
+}
   
-.contacts_media img {
-    width: 50px;
-    height: 50px;
+.contacts_button a:hover {
+    color: #ffefcf;
+}
+
+.contacts_button_send {
+    background-color: #FFA501;
+    box-shadow: 0 4px 5px 1px #2c2b2b23;
+}
+
+.contacts_button_send:hover {
+    background-color: #ff7801;
 }
