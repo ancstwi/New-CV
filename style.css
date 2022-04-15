@@ -767,8 +767,8 @@ header {
     justify-items: stretch;
     display: grid;
     gap: 5px; 
-    grid-template-columns: repeat(4, 220px);
-    grid-template-rows: repeat(2, 220px);
+    grid-template-columns: (4, 220px);
+    grid-template-rows: (2, 220px);
     grid-template-areas: 
         "uber pulse bread plans"
         "ipad mac mac plans";

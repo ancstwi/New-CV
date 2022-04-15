@@ -1,4 +1,5 @@
 @media (max-width: 1457px) {
+
     body {
         font-size: 0.9rem;
     }
@@ -66,6 +67,17 @@
 
 
 @media (max-width: 1350px) {
+    /*--------Стили для article-----------*/
+
+    .all-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: -100px;
+    }
+    
+
     /*--------Стили для Хэдера--------*/
 
     .main_info {
@@ -160,19 +172,29 @@
 
 @media (max-width: 1180px) {
     
+    /*--------Стили для article-----------*/
+
+    .all-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -150px;
+    }
+
     /*---------Стили для Хэдера-------------*/
 
     header {
-        height: 60vh;
+        height: 600px;
     }
 
     .main_media {
-        margin-top: 20vh;
+        margin-top: 150px;
     }
 
     .main_info {
         margin-left: 2%;
-        margin-top: 12vh;
+        margin-top: 120px;
         width: 300px;
     }
 
@@ -180,9 +202,13 @@
     /*---------Блок Про меня------------*/
 
     .main_img {
-        width: 230px;
-        height: 230px;
+        width: 300px;
+        height: 470px;
         object-fit: cover;
+    }
+
+    .wrapper {
+        margin-left: 40px; 
     }
 
     .about-me_work-info p {
@@ -234,31 +260,6 @@
         width: auto;
         height: 35px;
     }
-    
-
-    /*--------Блок Портфолио-------------*/
-
-    .portfolio_works {
-        position: relative;
-        grid-template-columns: repeat(3, 220px);
-        grid-template-rows: repeat(3, 220px);
-        grid-template-areas: 
-            "uber pulse bread"
-            "ipad . plans"
-            "mac mac plans";
-    }
-
-    .portfolio_works::after {
-        content: "";
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        z-index: -1;
-        width: 70%;
-        height: 70%;
-        border-radius: 100%;
-        background-color:#dfdddd;        
-    }
 
 
     /*----------Блок Прайс-лист----------*/
@@ -267,6 +268,26 @@
         width: 280px;
         margin-bottom: 20px;
         position: relative;
+    }
+
+
+    /*-----------Блок Контакты-----------*/
+
+    .contacts_wrapper {
+        margin-left: 40px; 
+        width: 60%;
+    }
+
+    .contacts_media img {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .floating .message_input {
+        height: 90px;
     }
 
 }
