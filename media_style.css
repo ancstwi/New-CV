@@ -123,7 +123,7 @@
     .work-info_container_text {
         padding-top: 15px; 
         margin-left: 40px;   
-        width: 98%;
+        width: 94%;
     }
 
 
@@ -211,16 +211,13 @@
 
     /*----------Блок Опыт----------*/
 
-    .experience_education {
-        margin-left: 50px;
-    }
-
     .education-work li {   
         padding-bottom: 50px;
         position: relative;
         height: 160px;
         width: 75%;
     }
+
 
     /*--------Блок Навыки----------*/
 
@@ -262,6 +259,7 @@
         border-radius: 100%;
         background-color:#dfdddd;        
     }
+
 
     /*----------Блок Прайс-лист----------*/
     .prices {
