@@ -327,6 +327,261 @@
 }
 
 @media (max-width: 850px) {
+   
+    /*---------Стили для Хэдера------------*/
 
+    header {
+        background-size: 150% 75%;
+        background-position-x: center;
+    }
+
+    .main_media {
+        margin-top: 150px;
+    }
+
+    .main_info {
+        margin-top: 15vh;
+        margin-left: -17%;
+        width: 300px;
+    }
+
+
+    /*----------Блок Обо мне-----------*/
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .main_img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        margin-left: 0px; 
+    }
+
+    .work-info_container {
+        position: relative;
+        width: 45%;
+    }
+    
+    .work-info_container_1 {
+        position: relative;
+        width: 45%;
+    }
+
+    /*----------Заголовок блока Обо мне------------*/
+
+    .about-me_menu {
+        position: relative;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .about-me_menu_h4 {
+        position: relative;
+        padding-bottom: 12px;  
+        padding-left: 8px;
+    }
+
+    /*-----Большой оранжевый круг у заголовка---------*/
+
+    .about-me_menu_h4::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 47.6%;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color:#FFA501;  
+    }
+
+    /*-----Маленькая оранжевая линия под заголовками----------*/
+
+    .about-me_menu_h4::after {
+        content: "";
+        position: absolute;
+        top: 85px;
+        left: 46.6%;
+        z-index: -1;
+        width: 50px;
+        height: 3px;
+        background-color:#FFA501;
+    }
+
+    /*-------Большой оранжевый круг у заголовка (Для всех заголовков)---------*/
+
+    .menu::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 47%;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color:#FFA501;
+    }
+
+    /*-------Маленькая оранжевая линия под заголовками (Для всех заголовков)----------*/
+
+    .menu::after {
+        content: "";
+        position: absolute;
+        top: 95px;
+        left: 46%;
+        z-index: -1;
+        width: 50px;
+        height: 3px;
+        background-color:#FFA501;
+    }
+
+    /*----------Блок Опыт----------*/
+
+
+    .education-work {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 80px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .education-work li {   
+        padding-bottom: 50px;
+        position: relative;
+        height: 180px;
+        width: 95%;
+    }
+    
+    .education-work h5 {
+       width: 87%;
+    }
+
+    .education-work h6 {
+        width: 87%;
+     }
+
+    .education-work p {
+        width: 87%;
+    }
+
+    /*------Большие вертикальные линии у подзаголовков----------*/
+
+    .education-work h4::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -42px;
+        z-index: -2;
+        width: 0.8px;
+        height: 1800%;
+        background-color: #000000;
+    }
+    
+    /*------------Стили для блока exprience: education--------------------*/
+
+    .experience_education {
+        margin: 0 auto;
+    }
+
+
+    /*--------Блок Портфолио-----------*/
+
+    .portfolio_works {
+        justify-items: stretch;
+        display: grid;
+        gap: 5px; 
+        grid-template-columns: (2, 200px);
+        grid-template-rows: (4, 200px);
+        grid-template-areas: 
+            "uber pulse"
+            "bread plans"
+            "ipad plans"
+            "mac mac";
+    }
+
+    /*-------------Блок Прайс-лист--------------*/
+
+    .menu_price::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 46.5%;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color:#FFA501;
+    }
+
+    .menu_price::after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 45.5%;
+        z-index: -1;
+        width: 50px;
+        height: 3px;
+        background-color:#FFA501;
+    }
+
+
+    /*-----------Блок Контакты------------*/
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts_wrapper {
+        margin-left: 0px; 
+        width: 100%;
+    }
+
+    /*-------------Заголовок блока Контакты----------------*/
+
+    .contacts_menu {
+        position: relative;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .contacts_menu_h4 {
+        position: relative;
+        padding-bottom: 12px;  
+        padding-left: 8px;
+    }
+
+    /*-----Большой оранжевый круг у заголовка---------*/
+
+    .contacts_menu_h4::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: 47.6%;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color:#FFA501;  
+    }
+
+    /*-----Маленькая оранжевая линия под заголовками----------*/
+
+    .contacts_menu_h4::after {
+        content: "";
+        position: absolute;
+        top: 85px;
+        left: 46.6%;
+        z-index: -1;
+        width: 50px;
+        height: 3px;
+        background-color:#FFA501;
+    }
 
 }
