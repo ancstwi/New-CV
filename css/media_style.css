@@ -362,6 +362,10 @@
     .wrapper {
         margin-left: 0px; 
     }
+    
+    .about-me_work-info p {
+        width: 90%;
+    }
 
     .work-info_container {
         position: relative;
@@ -557,31 +561,59 @@
         padding-left: 8px;
     }
 
+    .contacts_button {
+        margin-top: 15px;   
+    }
+
     /*-----Большой оранжевый круг у заголовка---------*/
 
     .contacts_menu_h4::before {
-        content: "";
-        position: absolute;
         top: -7px;
         left: 47.6%;
-        z-index: -1;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color:#FFA501;  
     }
 
     /*-----Маленькая оранжевая линия под заголовками----------*/
 
     .contacts_menu_h4::after {
-        content: "";
-        position: absolute;
         top: 85px;
         left: 46.6%;
-        z-index: -1;
-        width: 50px;
-        height: 3px;
-        background-color:#FFA501;
     }
 
+}
+
+@media (max-width: 500px) {
+
+    /*---------Стили для Хэдера------------*/
+
+    header {
+        background-size: 150% 150%;
+        background-position-x: inherit;
+    }
+
+
+
+    /*--------Блок Портфолио-----------*/
+
+    .portfolio_works {
+        justify-items: stretch;
+        display: grid;
+        gap: 5px; 
+        grid-template-columns: (1, 200px);
+        grid-template-rows: (6, 200px);
+        grid-template-areas: 
+            "uber"
+            "pulse"
+            "bread"
+            "plans"
+            "ipad"
+            "mac";
+    }
+
+    .mac_1 { 
+        grid-area: mac; 
+    }
+    
+    .plans_1 {
+        grid-area: plans;
+    }
 }
