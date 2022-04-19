@@ -49,19 +49,6 @@
         width: 90%;
     }
 
-    /*------Большие вертикальные линии у подзаголовков----------*/
-
-    .education-work h4::after {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: -42px;
-        z-index: -2;
-        width: 0.8px;
-        height: 1510%;
-        background-color: #000000;
-    }
-
 
     /*--------Блок Навыки---------*/
 
@@ -239,19 +226,6 @@
         width: 90%;
     }
 
-    /*------Большие вертикальные линии у подзаголовков----------*/
-
-    .education-work h4::after {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: -42px;
-        z-index: -2;
-        width: 0.8px;
-        height: 1630%;
-        background-color: #000000;
-    }
-
 
     /*----------Блок Опыт----------*/
 
@@ -262,7 +236,7 @@
         width: 95%;
     }
 
-/*------------Стили для блока experience: education----------------*/
+    /*------------Стили для блока experience: education----------------*/
 
     .education_info {
         display: flex;
@@ -321,8 +295,6 @@
     .floating .message_input {
         height: 90px;
     }
-
-
 
 }
 
@@ -394,28 +366,15 @@
     /*-----Большой оранжевый круг у заголовка---------*/
 
     .about-me_menu_h4::before {
-        content: "";
-        position: absolute;
         top: -7px;
-        left: 47.6%;
-        z-index: -1;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color:#FFA501;  
+        left: 47.6%; 
     }
 
     /*-----Маленькая оранжевая линия под заголовками----------*/
 
     .about-me_menu_h4::after {
-        content: "";
-        position: absolute;
         top: 85px;
         left: 46.6%;
-        z-index: -1;
-        width: 50px;
-        height: 3px;
-        background-color:#FFA501;
     }
 
     /*-------Большой оранжевый круг у заголовка (Для всех заголовков)---------*/
@@ -474,19 +433,6 @@
     .education-work p {
         width: 87%;
     }
-
-    /*------Большие вертикальные линии у подзаголовков----------*/
-
-    .education-work h4::after {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: -42px;
-        z-index: -2;
-        width: 0.8px;
-        height: 1800%;
-        background-color: #000000;
-    }
     
     /*------------Стили для блока exprience: education--------------------*/
 
@@ -510,29 +456,17 @@
             "mac mac";
     }
 
+
     /*-------------Блок Прайс-лист--------------*/
 
     .menu_price::before {
-        content: "";
-        position: absolute;
         top: -7px;
         left: 46.5%;
-        z-index: -1;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color:#FFA501;
     }
 
     .menu_price::after {
-        content: "";
-        position: absolute;
         top: 50px;
         left: 45.5%;
-        z-index: -1;
-        width: 50px;
-        height: 3px;
-        background-color:#FFA501;
     }
 
 
@@ -590,15 +524,177 @@
         background-position-x: inherit;
     }
 
+    .main_div {
+        flex-direction: column-reverse;
+        margin-left: 5px;
+    }
 
+    /*---------Стили бля блока media--------------*/
+
+    .main_media { 
+        width: 0px;
+        height: 0px;
+    }
+
+    .main_media::after {
+        left: 48%;
+    }
+    
+    /*---------Стили для блока info--------------*/
+
+    .main_info {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    /*-------------------Стили для article--------------*/
+
+    .all-info {
+        margin-top: 50px;
+    }
+
+    /*-----Большой оранжевый круг у заголовков---------*/
+
+    .about-me_menu_h4::before {
+        top: -7px;
+        left: 45.6%; 
+    }
+
+    .menu::before {
+        left: 45%;
+    }
+
+    .menu_price::before {
+        top: -7px;
+        left: 44.5%;
+    }
+
+    .contacts_menu_h4::before {
+        top: -7px;
+        left: 45.6%;
+    }
+
+    /*-----Маленькая оранжевая линия под заголовками----------*/
+    
+    .about-me_menu_h4::after {
+        top: 85px;
+        left: 43.6%;
+    }
+
+    .menu::after {
+        left: 43%;
+    }
+
+    .menu_price::after {
+        top: 50px;
+        left: 42.5%;
+    }
+
+    .contacts_menu_h4::after {
+        top: 85px;
+        left: 43.6%;
+    }
+
+
+    /*----------Блок Обо мне-----------*/
+
+    .about-me_work-info div {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .work-info_container {
+        margin-left: 15px;
+    }
+
+    .work-info_container_1 {
+        margin-left: 15px;
+    }
+    
+    .about-me_work-info p {
+        margin-left: 10px; 
+    }
+
+    .about-me_work-info h4 {
+        margin-left: 10px; 
+    }
+
+    /*----------Блок Опыт------------*/
+
+    .education-work {
+        margin-left: 0px;
+        justify-content: flex-start;
+        padding-left: 45px;
+        width: 100%;
+    }
+
+    .education-work li {   
+        height: 50%;
+        width: 100%;
+    }
+
+    .education-work h5 {
+        width: 100%;
+    }
+ 
+    .education-work h6 {
+         width: 100%;
+    }
+ 
+    .education-work p {
+         width: 100%;
+    }
+
+    /*------------Стили для блока experience: education----------------*/
+
+    .education_info {
+        display: flex;
+        width: 100%;
+    }
+        
+    /*------------Стили для блока experience: work----------------*/        
+
+    .work_info {
+        display: flex;
+        width: 100%;
+    }
+
+    /*---------Блок Навыки------------*/
+
+    .skills_container {
+        justify-content: center;
+    }
+
+    .skills_container div {
+        width: 80%;
+        height: 260px;
+    }
+
+    .skills_img {
+        width: auto;
+        height: 40px;
+    }
+
+    .skills_scale div {
+        width: 95%;
+        min-width: 200px;
+        margin: 0 auto;
+    }
 
     /*--------Блок Портфолио-----------*/
 
+    .price-list {
+        margin-top: 50px;
+    }
+
     .portfolio_works {
+        margin-left: 5%;
+        width: 90%;
         justify-items: stretch;
         display: grid;
-        gap: 5px; 
-        grid-template-columns: (1, 200px);
+        gap: 20px; 
+        grid-template-columns: 1fr;
         grid-template-rows: (6, 200px);
         grid-template-areas: 
             "uber"
@@ -609,11 +705,41 @@
             "mac";
     }
 
+    .mac {
+        width: 0%;
+        height: 0%;
+    }
     .mac_1 { 
         grid-area: mac; 
     }
-    
+ 
+    .plans {
+        width: 0%;
+        height: 0%;
+    }   
+
     .plans_1 {
         grid-area: plans;
+    }
+
+    /*---------Блок Прайс-лист------------*/
+
+    .prices {
+        width: 320px;
+        min-width: 100px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    /*---------Блок Контакты----------*/
+
+    .contacts {
+        margin-top: -25px;
+    }
+
+    .end_img {
+        width: 0px;
+        height: 0px;
     }
 }

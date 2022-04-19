@@ -237,10 +237,13 @@ header {
 
 /*----------------Стили для блока about-me (Информация)--------------------*/
 
+.about-me_main-info {
+    width: 95%;
+}
+
 .about-me_work-info {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .about-me_work-info p {
@@ -338,6 +341,7 @@ header {
 }
 
 .menu h2 {
+    position: relarive;
     padding-top: 15px;
 }
 
@@ -421,13 +425,13 @@ header {
     background-color: #000000;
 }
 
-.education-work h4 {
+.vertical_line {
     position: relative;
 }
 
 /*------Маленькие оранжевые круги у подзаголовков-------*/
 
-.education-work h4::before {
+.vertical_line::before {
     content: "";
     position: absolute;
     top: 2px;
@@ -441,14 +445,14 @@ header {
 
 /*------Большие вертикальные линии у подзаголовков----------*/
 
-.education-work h4::after {
+.vertical_line::after {
     content: "";
     position: absolute;
     top: 5px;
     left: -42px;
     z-index: -2;
     width: 0.8px;
-    height: 1610%;
+    height: 90%;
     background-color: #000000;
 }
 
@@ -870,7 +874,6 @@ header {
     height: 3px;
     background-color:#FFA501;
 }
-
 
 
 /*------------------Стили для блока Контакты---------------------------*/
