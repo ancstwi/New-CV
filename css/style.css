@@ -798,8 +798,18 @@ header {
     grid-area: mac; 
 }
 
+.mac_1 {
+    width: 0px;
+    height: 0px;
+}
+
 .plans {
     grid-area: plans;
+}
+
+.plans_1 {
+    width: 0px;
+    height: 0px;
 }
 
 /*--------------------Блок Прайс-лист------------------------*/
