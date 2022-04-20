@@ -15,7 +15,6 @@
         width: 300px;
     }
 
-
     .main_media::after {
         top: 12px;
         left: 145px;
@@ -96,28 +95,15 @@
     /*-----Большой оранжевый круг у заголовка---------*/
 
     .menu::before {
-        content: "";
-        position: absolute;
         top: -7px;
         left: 48%;
-        z-index: -1;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color:#FFA501;
     }
 
     /*-----Маленькая оранжевая линия под заголовками----------*/
 
     .menu::after {
-        content: "";
-        position: absolute;
         top: 95px;
         left: 47.5%;
-        z-index: -1;
-        width: 50px;
-        height: 3px;
-        background-color:#FFA501;
     }
 
     /*-------Блок Про меня---------*/
@@ -199,7 +185,11 @@
     }
 
 
-    /*---------Блок Про меня------------*/
+    /*---------Блок Обо мне------------*/
+
+    .about-me {
+        margin-top: 5%;
+    }
 
     .main_img {
         width: 270px;
@@ -300,15 +290,16 @@
     header {
         background-size: 150% 75%;
         background-position-x: center;
+        height: 90vh;
     }
 
     .main_media {
-        margin-top: 150px;
+        width: 0px;
+        height: 0px;
     }
 
     .main_info {
-        margin-top: 15vh;
-        margin-left: -17%;
+        margin: 20vh auto;
         width: 300px;
     }
 
@@ -316,6 +307,7 @@
     /*----------Блок Обо мне-----------*/
 
     .about-me {
+        margin-top: 100px;
         flex-direction: column;
     }
 
@@ -375,28 +367,15 @@
     /*-------Большой оранжевый круг у заголовка (Для всех заголовков)---------*/
 
     .menu::before {
-        content: "";
-        position: absolute;
         top: -7px;
         left: 47%;
-        z-index: -1;
-        width: 36px;
-        height: 36px;
-        border-radius: 100%;
-        background-color:#FFA501;
     }
 
     /*-------Маленькая оранжевая линия под заголовками (Для всех заголовков)----------*/
 
     .menu::after {
-        content: "";
-        position: absolute;
         top: 95px;
         left: 46%;
-        z-index: -1;
-        width: 50px;
-        height: 3px;
-        background-color:#FFA501;
     }
 
     /*----------Блок Опыт----------*/
@@ -508,20 +487,25 @@
         left: 46.6%;
     }
 
+    .floating .message_input {
+        height: 150px;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 515px) {
 
     /*---------Стили для Хэдера------------*/
 
     header {
-        background-size: 150% 150%;
-        background-position-x: inherit;
+        background-image: url(../src/Background/BackgroundPhone.png);
+        background-position-x: none;
+        background-size: 100% 100%;
+        height: 100vh;
     }
 
     .main_div {
         flex-direction: column-reverse;
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     /*---------Стили бля блока media--------------*/
@@ -541,7 +525,6 @@
         margin: 0 auto;
         width: 100%;
     }
-
 
     /*-------------------Стили для article--------------*/
 
@@ -735,6 +718,10 @@
 
     .contacts {
         margin-top: -25px;
+    }
+
+    .floating .message_input {
+        height: 150px;
     }
 
     .end_img {

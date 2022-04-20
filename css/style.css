@@ -969,6 +969,11 @@ header {
     width: 48%;
 }
 
+.name_label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
 .name_input {
     display: block;
     width: 100%;
@@ -1007,10 +1012,35 @@ header {
     transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
 }
 
+.name_input[type="search"]::-webkit-search-decoration,
+.name_input[type="search"]::-webkit-search-cancel-button,
+.name_input[type="search"]::-webkit-search-results-button,
+.name_input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+}
+
+.name_input:focus {
+    color: #212529;
+    background-color: #faf3e8;
+    border-color: #FFA501;
+    outline: 0;
+    box-shadow: 0 0 5px 0.2rem #fbdea8;
+}
+
+.name_input:disabled,
+.name_input[readonly] {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.floating .name_input::placeholder {
+    color: transparent;
+}
+
 .floating .name_input:focus~.name_label,
 .floating .name_input:not(:placeholder-shown)~.name_label {
-    top: 0;
-    transform: translateY(-50%) scale(0.75);
+top: 0;
+transform: translateY(-50%) scale(0.75);
 }
 
 /*-------------Стили для текстового поля Ваша почта--------------*/
@@ -1019,9 +1049,10 @@ header {
     width: 48%;
 }
 
-.floating .mail_input {
-    height: 45px;
-}
+.mail_label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
 
 .mail_input {
     display: block;
@@ -1042,6 +1073,10 @@ header {
     appearance: none;
   }
 
+.floating .mail_input {
+    height: 45px;
+}
+
 .floating .mail_label {
     position: absolute;
     top: 50%;
@@ -1057,10 +1092,35 @@ header {
     transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
 }
 
+.mail_input[type="search"]::-webkit-search-decoration,
+.mail_input[type="search"]::-webkit-search-cancel-button,
+.mail_input[type="search"]::-webkit-search-results-button,
+.mail_input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+}
+
+.mail_input:focus {
+    color: #212529;
+    background-color: #faf3e8;
+    border-color: #FFA501;
+    outline: 0;
+    box-shadow: 0 0 5px 0.2rem #fbdea8;
+}
+
+.mail_input:disabled,
+.mail_input[readonly] {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.floating .mail_input::placeholder {
+    color: transparent;
+}
+
 .floating .mail_input:focus~.mail_label,
 .floating .mail_input:not(:placeholder-shown)~.mail_label {
-    top: 0;
-    transform: translateY(-50%) scale(0.75);
+top: 0;
+transform: translateY(-50%) scale(0.75);
 }
 
 /*--------Стили для текстового поля Ваше сообщение--------------*/
@@ -1069,9 +1129,10 @@ header {
     width: 100%;
 }
 
-.floating .message_input {
-    height: 190px;
-}
+.message_label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
 
 .message_input {
     display: block;
@@ -1092,12 +1153,15 @@ header {
     appearance: none;
   }
 
+.floating .message_input {
+    height: 190px;
+}
+
 .floating .message_label {
     position: absolute;
-    top: 50%;
+    top: 6%;
     left: 0.3125rem;
     display: flex;
-    transform: translateY(-50%);
     pointer-events: none;
     border: none;
     background-color: #fff;
@@ -1107,10 +1171,35 @@ header {
     transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
 }
 
+.message_input[type="search"]::-webkit-search-decoration,
+.message_input[type="search"]::-webkit-search-cancel-button,
+.message_input[type="search"]::-webkit-search-results-button,
+.message_input[type="search"]::-webkit-search-results-decoration {
+      -webkit-appearance: none;
+}
+
+.message_input:focus {
+    color: #212529;
+    background-color: #faf3e8;
+    border-color: #FFA501;
+    outline: 0;
+    box-shadow: 0 0 5px 0.2rem #fbdea8;
+}
+
+.message_input:disabled,
+.message_input[readonly] {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.floating .message_input::placeholder {
+    color: transparent;
+}
+
 .floating .message_input:focus~.message_label,
-.floating .message_input:not(:placeholder-shown)~.message_label {
-    top: 0;
-    transform: translateY(-50%) scale(0.75);
+.floating .messsage_input:not(:placeholder-shown)~.message_label {
+top: 0;
+transform: translateY(-50%) scale(0.75);
 }
 
 /*---------Стили для кнопки Отправить сообщение----------*/
