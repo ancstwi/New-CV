@@ -46,6 +46,11 @@
 
     /*--------Блок Навыки---------*/
 
+    .skills_container {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
     .skills_container div {
         border: 1px solid black;
         margin-left: 5px;
@@ -92,19 +97,6 @@
         height: 550px;
     }
 
-    /*-----Большой оранжевый круг у заголовка---------*/
-
-    .menu::before {
-        top: -7px;
-        left: 48%;
-    }
-
-    /*-----Маленькая оранжевая линия под заголовками----------*/
-
-    .menu::after {
-        top: 95px;
-        left: 47.5%;
-    }
 
     /*-------Блок Про меня---------*/
 
@@ -148,6 +140,7 @@
         padding-left: 15px;
     }
 
+
     /*----Блок Контакты-----*/
 
     .floating .message_input {
@@ -167,6 +160,7 @@
         margin-right: 3%;
         margin-top: -150px;
     }
+
 
     /*---------Стили для Хэдера-------------*/
 
@@ -188,7 +182,7 @@
     /*---------Блок Обо мне------------*/
 
     .about-me {
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .main_img {
@@ -339,61 +333,46 @@
     /*----------Заголовок блока Обо мне------------*/
 
     .about-me_menu {
+        display: flex;
+        flex-direction: column;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 75px;
         text-align: center;
+        justify-content: space-around;
     }
-
-    .about-me_menu_h4 {
+    
+    .about-me_menu h4 {
         position: relative;
-        padding-bottom: 12px;  
-        padding-left: 8px;
+        width: 100px;
+        margin: 0 auto;
     }
 
-    /*-----Большой оранжевый круг у заголовка---------*/
-
-    .about-me_menu_h4::before {
-        top: -7px;
-        left: 47.6%; 
+    .about-me_menu h4::before {
+        left: 33px;
     }
 
-    /*-----Маленькая оранжевая линия под заголовками----------*/
-
-    .about-me_menu_h4::after {
-        top: 85px;
-        left: 46.6%;
+    .about-me_menu h4::after {
+        left: 28px;
     }
 
-    /*-------Большой оранжевый круг у заголовка (Для всех заголовков)---------*/
-
-    .menu::before {
-        top: -7px;
-        left: 47%;
-    }
-
-    /*-------Маленькая оранжевая линия под заголовками (Для всех заголовков)----------*/
-
-    .menu::after {
-        top: 95px;
-        left: 46%;
-    }
 
     /*----------Блок Опыт----------*/
-
 
     .education-work {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 80px;
+        flex-direction: column;
+        padding-left: 0px;
         margin: 0 auto;
         justify-content: space-around;
+        padding-left: 15%;
     }
 
     .education-work li {   
         padding-bottom: 50px;
         position: relative;
         height: 180px;
-        width: 95%;
+        width: auto;
     }
     
     .education-work h5 {
@@ -408,12 +387,40 @@
         width: 87%;
     }
     
+
     /*------------Стили для блока exprience: education--------------------*/
 
     .experience_education {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    .education_info {
+        display: flex;
+        width: 90%;
+    }
+    
+    /*------------Стили для блока experience: work----------------*/
+
+    .experience_work {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    .work_info {
+        display: flex;
+        width: 90%;
+    }
+
+
+    /*-----------Блок Навыки-------------*/
+
+    .skills_container {
+        justify-content: center;
+        margin-right: auto;
+        margin-left: 0%;
+    }
 
     /*--------Блок Портфолио-----------*/
 
@@ -431,19 +438,6 @@
     }
 
 
-    /*-------------Блок Прайс-лист--------------*/
-
-    .menu_price::before {
-        top: -7px;
-        left: 46.5%;
-    }
-
-    .menu_price::after {
-        top: 50px;
-        left: 45.5%;
-    }
-
-
     /*-----------Блок Контакты------------*/
 
     .contacts {
@@ -458,37 +452,44 @@
     /*-------------Заголовок блока Контакты----------------*/
 
     .contacts_menu {
+        display: flex;
+        flex-direction: column;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 75px;
         text-align: center;
+        justify-content: space-around;
     }
 
     .contacts_menu_h4 {
         position: relative;
-        padding-bottom: 12px;  
-        padding-left: 8px;
+        width: 100px;
+        margin: 0 auto;
     }
 
     .contacts_button {
         margin-top: 15px;   
     }
 
-    /*-----Большой оранжевый круг у заголовка---------*/
-
     .contacts_menu_h4::before {
-        top: -7px;
-        left: 47.6%;
+        left: 33px;
     }
 
-    /*-----Маленькая оранжевая линия под заголовками----------*/
-
     .contacts_menu_h4::after {
-        top: 85px;
-        left: 46.6%;
+        left: 28px;
     }
 
     .floating .message_input {
         height: 150px;
+    }
+}
+
+@media (max-width: 575px) {
+    /*---------Блок Навыки------------*/
+
+    .skills_scale div {
+        width: 95%;
+        min-width: 220px;
+        margin: 0 10%;
     }
 }
 
@@ -532,48 +533,6 @@
         margin-top: 50px;
     }
 
-    /*-----Большой оранжевый круг у заголовков---------*/
-
-    .about-me_menu_h4::before {
-        top: -7px;
-        left: 45.6%; 
-    }
-
-    .menu::before {
-        left: 45%;
-    }
-
-    .menu_price::before {
-        top: -7px;
-        left: 44.5%;
-    }
-
-    .contacts_menu_h4::before {
-        top: -7px;
-        left: 45.6%;
-    }
-
-    /*-----Маленькая оранжевая линия под заголовками----------*/
-    
-    .about-me_menu_h4::after {
-        top: 85px;
-        left: 43.6%;
-    }
-
-    .menu::after {
-        left: 43%;
-    }
-
-    .menu_price::after {
-        top: 50px;
-        left: 42.5%;
-    }
-
-    .contacts_menu_h4::after {
-        top: 85px;
-        left: 43.6%;
-    }
-
 
     /*----------Блок Обо мне-----------*/
 
@@ -603,8 +562,8 @@
     .education-work {
         margin-left: 0px;
         justify-content: flex-start;
-        padding-left: 45px;
-        width: 100%;
+        padding-left: 20%;
+        width: 90%;
     }
 
     .education-work li {   
@@ -617,11 +576,11 @@
     }
  
     .education-work h6 {
-         width: 100%;
+        width: 100%;
     }
  
     .education-work p {
-         width: 100%;
+        width: 100%;
     }
 
     /*------------Стили для блока experience: education----------------*/
@@ -642,6 +601,8 @@
 
     .skills_container {
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .skills_container div {
@@ -656,7 +617,7 @@
 
     .skills_scale div {
         width: 95%;
-        min-width: 200px;
+        min-width: 220px;
         margin: 0 auto;
     }
 
@@ -727,5 +688,11 @@
     .end_img {
         width: 0px;
         height: 0px;
+    }
+}
+
+@media (max-width: 298px) {
+    .skills .menu h4::after {
+        top: 125px;
     }
 }

@@ -203,12 +203,16 @@ header {
 /*---------------Стили для блока about-me (Заголовок)----------------------*/
 
 .about-me_menu {
+    display: flex;
+    flex-direction: column;
     padding-top: 6px; 
     padding-bottom: 40px;
+    justify-content: flex-start;
 }
 
 .about-me_menu_h4 {
     position: relative;
+    width: 100px;
     padding-bottom: 12px;  
     padding-left: 8px;
 }
@@ -335,23 +339,32 @@ header {
 /*-----------Стили для всех последующих заголовков------------*/
 
 .menu {
+    display: flex;
+    flex-direction: column;
     position: relative;
     margin-bottom: 75px;
     text-align: center;
+    justify-content: space-around;
+}
+
+.menu h4 {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
 }
 
 .menu h2 {
-    position: relarive;
+    position: relative;
     padding-top: 15px;
 }
 
 /*-----Большой оранжевый круг у заголовка---------*/
 
-.menu::before {
+.menu h4::before {
     content: "";
     position: absolute;
     top: -7px;
-    left: 48.4%;
+    left: 33px;
     z-index: -1;
     width: 36px;
     height: 36px;
@@ -361,17 +374,16 @@ header {
 
 /*-----Маленькая оранжевая линия под заголовками----------*/
 
-.menu::after {
+.menu h4::after {
     content: "";
     position: absolute;
     top: 95px;
-    left: 48%;
+    left: 28px;
     z-index: -1;
     width: 50px;
     height: 3px;
     background-color:#FFA501;
 }
-
 
 
 /*-----------Стили для блока Опыт-------------*/
@@ -533,10 +545,10 @@ header {
 }
 
 
-
-/*---------------------Стили для блока skills----------------------*/
+/*---------------------Стили для блока Навыки----------------------*/
 
 .skills_container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 100px;
@@ -849,22 +861,25 @@ header {
 /*------------Стили для меню блока Прайс-лист--------------*/
 
 .menu_price {
+    display: flex;
     position: relative;
     margin-bottom: 75px;
     text-align: center;
+    justify-content: center;
 }
 
-.menu_price h2 {
-    padding-top: 15px;
+.menu_price h4 {
+    position: relative;
+    width: 100px;
 }
 
 /*-----Большой оранжевый круг у заголовка---------*/
 
-.menu_price::before {
+.menu_price h4::before {
     content: "";
     position: absolute;
     top: -7px;
-    left: 48.4%;
+    left: 33px;
     z-index: -1;
     width: 36px;
     height: 36px;
@@ -874,11 +889,11 @@ header {
 
 /*-----Маленькая оранжевая линия под заголовка----------*/
 
-.menu_price::after {
+.menu_price h4::after {
     content: "";
     position: absolute;
     top: 50px;
-    left: 47.8%;
+    left: 27px;
     z-index: -1;
     width: 50px;
     height: 3px;
@@ -913,8 +928,11 @@ header {
 /*-------------Заголовок блока Контакты----------------*/
 
 .contacts_menu {
+    display: flex;
+    flex-direction: column;
     padding-top: 6px; 
     padding-bottom: 40px;
+    justify-content: center;
 }
 
 .contacts_menu_h4 {
