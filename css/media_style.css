@@ -10,6 +10,10 @@
         height: 600px;
     }
 
+    .navigation {
+        height: 600px;
+    }
+
     .main_info {
         margin-left: 8%;
         width: 300px;
@@ -77,6 +81,10 @@
     /*---------Стили для Хэдера-------------*/
 
     header {
+        height: 700px;
+    }
+
+    .navigation {
         height: 700px;
     }
 

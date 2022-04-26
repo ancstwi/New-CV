@@ -11,7 +11,6 @@ section {
 }
 
 
-
 /*--------------------Стили для блока header--------------------*/
 
 header {
@@ -30,18 +29,131 @@ header {
 }
 
 
+/*------------Стили для блока navigation----------------*/
 
-/*----------Стили для header (Три черные линии)---------------------*/
+.navigation {
+    position: fixed;
+    background-color: #FFA501;
+    width: 300px;
+    height: 80vh;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation.active {
+    position: fixed;
+    background-color: #FFA501;
+    width: 300px;
+    height: 80vh;
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-menu {
+    margin-left: 60px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.nav-menu a::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000000;
+    border-radius: 100%;
+}
+
+.nav-menu a:hover::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 100%;
+}
+
+/*---------Изображения в блоке Навигация----------*/
+
+.nav-media {
+    transform: rotate(90deg); 
+    margin-top: 34vh;
+}
+
+.nav-media img {
+    width: 18px;
+    height: 18px;
+    margin-top: 15px;
+}
+
+/*---------Черный крестик справа-------------*/
+
+.cross {
+    margin: 20px 0 0 auto; 
+    margin-right: 20px; 
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.cross_black-line-first {
+    content: "";
+    position: relative;
+    top: 12px;
+    left: -2px;
+    width: 30px;
+    height: 3.5px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.cross_black-line-second {
+    content: "";
+    position: relative;
+    top: 8.5px;
+    left: -2px;
+    width: 30px;
+    height: 3.5px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+}
+
+/*-------------Стили для header (Три черные линии)------------------*/
 
 .lines {
-    margin: 0 0 0 auto;  
+    margin: 0 0 0 auto; 
+    margin-top: 30px;
+    margin-right: 20px; 
+    height: 23.5px;
+    width: 36px;
+    cursor: pointer;
 }
 
 .black-line {
     position: relative;
-    top: 30px;
-    left: -30px;
-    width: 36px;
+    left: 6px;
+    width: 30px;
     height: 3.5px;
     background-color: #000000;
 }
@@ -49,9 +161,9 @@ header {
 .black-line::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: 6px;
-    width: 30px;
+    top: 10px;
+    left: -6px;
+    width: 36px;
     height: 3px;
     background-color: #000000;
 }
@@ -59,13 +171,12 @@ header {
 .black-line::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 6px;
+    top: 20px;
+    left: 0px;
     width: 30px;
-    height: 3px;
+    height: 3.5px;
     background-color: #000000;
 }
-
 
 
 /*---------Стили бля блока media--------------*/
@@ -74,7 +185,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 30vh;
-    margin-left: -70px;
+    margin-left: -60px;
     transform: rotate(-90deg);
     max-height: 120px;
     position: relative; 
@@ -102,7 +213,6 @@ header {
     height: 3px;
     background-color: #000000;
 }
-
 
 
 /*-------Стили для блока info----------*/
@@ -141,7 +251,6 @@ header {
 }
 
 
-
 /*-------Стили для ссылок в блоке nav------*/
 
 .main_nav {
@@ -163,7 +272,6 @@ header {
 }
 
 
-
 /*-------------------Стили для article--------------*/
 
 .all-info {
@@ -182,7 +290,6 @@ header {
 }
 
 
-
 /*-------------------Стили для всего блока about-me--------------------*/
 
 .main_img {
@@ -197,7 +304,6 @@ header {
 .about-me {
     display: flex;
 }
-
 
 
 /*---------------Стили для блока about-me (Заголовок)----------------------*/
@@ -295,7 +401,6 @@ header {
 }
 
 
-
 /*----------Стили для маленьких изображений--------------*/
 
 .work-info_img {
@@ -333,7 +438,6 @@ header {
     content: "";
     position: absolute;
 }
-
 
 
 /*-----------Стили для всех последующих заголовков------------*/
@@ -776,7 +880,6 @@ header {
 }
 
 
-
 /*--------------Стили для блока Портфолио------------------*/
 
 .portfolio_works {
@@ -823,6 +926,7 @@ header {
     width: 0px;
     height: 0px;
 }
+
 
 /*--------------------Блок Прайс-лист------------------------*/
 
