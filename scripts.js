@@ -1,12 +1,14 @@
 "use strict"
 
 const menuBlock = document.querySelector('.navigation');
+const header = document.querySelector('header');
 
 const lines = document.querySelector('.lines');
 if (lines) {
     lines.addEventListener("click", function (e) {
         e.preventDefault;
         menuBlock.classList.add('active');
+        header.classList.add('active');
     });
 }
 
@@ -15,6 +17,7 @@ if (cross) {
     cross.addEventListener("click", function(e) {
         e.preventDefault;
         menuBlock.classList.remove('active');
+        header.classList.remove('active');
     });
 }
 
