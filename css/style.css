@@ -25,6 +25,7 @@ header {
 header.active {
     opacity: 25%;
     pointer-events: none;
+    transition: 0.3s;
 }
 
 .main_div {
@@ -44,6 +45,7 @@ header.active {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
+    transition: 0.3s;
 }
 
 .navigation.active {
@@ -54,6 +56,7 @@ header.active {
     z-index: 5;
     opacity: 1;
     visibility: visible;
+    transition: 0.3s;
 }
 
 .nav-menu {
@@ -190,7 +193,7 @@ header.active {
     display: flex;
     flex-direction: row;
     margin-top: 30vh;
-    margin-left: -60px;
+    margin-left: -45px;
     transform: rotate(-90deg);
     max-height: 120px;
     position: relative; 
