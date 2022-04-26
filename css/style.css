@@ -20,6 +20,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
+    transition: 0.3s;
 }
 
 header.active {
