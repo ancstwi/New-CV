@@ -10,7 +10,7 @@
         height: 600px;
     }
 
-    .navigation {
+    .navigation.active {
         height: 600px;
     }
 
@@ -84,7 +84,7 @@
         height: 700px;
     }
 
-    .navigation {
+    .navigation.active {
         height: 700px;
     }
 
@@ -173,6 +173,10 @@
     /*---------Стили для Хэдера-------------*/
 
     header {
+        height: 600px;
+    }
+
+    .navigation.active {
         height: 600px;
     }
 
