@@ -16,27 +16,34 @@
 
 <body>
     <!---------------Блок Навигация-------------------->
-
     <div class="navigation">
-        <div class="cross">
-            <div class="cross_black-line-first"></div>
-            <div class="cross_black-line-second"></div>
-        </div>
-        <nav class="nav-menu">
-            <a href="#about-me" class="nav-menu_about-me">ПРО МЕНЯ</a>
-            <a href="#experience" class="nav-menu_experience">МОЙ ОПЫТ</a>
-            <a href="#skills" class="nav-menu_skills">МОИ НАВЫКИ</a>
-            <a href="#portfolio" class="nav-menu_portfolio">МОИ РАБОТЫ</a>
-            <a href="#price-list" class="nav-menu_price">ПРАЙС-ЛИСТ</a>
-            <a href="#contacts" class="nav-menu_contacts">КОНТАКТЫ</a>
-        </nav>
-        <div class="nav-media">
-            <img src="src/Icons/Small/Facebook.svg" alt="Facebook" class="little-icon">
-            <img src="src/Icons/Small/Instagram.svg" alt="Instagram" class="little-icon">
-            <img src="src/Icons/Small/Github.svg" alt="Github" class="little-icon">
+        <div class="navigation_content">
+            <div class="cross">
+                <div class="cross_black-line-first"></div>
+                <div class="cross_black-line-second"></div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#about-me" class="nav-menu_about-me">ПРО МЕНЯ</a>
+                <a href="#experience" class="nav-menu_experience">МОЙ ОПЫТ</a>
+                <a href="#skills" class="nav-menu_skills">МОИ НАВЫКИ</a>
+                <a href="#portfolio" class="nav-menu_portfolio">МОИ РАБОТЫ</a>
+                <a href="#price-list" class="nav-menu_price">ПРАЙС-ЛИСТ</a>
+                <a href="#contacts" class="nav-menu_contacts">КОНТАКТЫ</a>
+            </nav>
+            <div class="nav-media">
+                <img src="src/Icons/Small/Facebook.svg" alt="Facebook" class="little-icon">
+                <img src="src/Icons/Small/Instagram.svg" alt="Instagram" class="little-icon">
+                <img src="src/Icons/Small/Github.svg" alt="Github" class="little-icon">
+            </div>
         </div>
     </div>
     
+    
+    <!----------Три черные линии - Меню------------------->
+    <div class="lines">
+        <div class="black-line"></div>
+    </div>
+
     <header class="main">
         <div class="main_div">
             <!-----Левый блок Социальные сети------->
@@ -57,10 +64,6 @@
                 </nav>
             </div>
 
-            <!----------Правый блок - три черные полосы------------------->
-            <div class="lines">
-                <div class="black-line"></div>
-            </div>
         </div>
     </header>
 
@@ -374,8 +377,30 @@
                 </div>
             </div>
         </section>
+
+        <section class="questions">
+            <h4> ВОПРОСЫ</h4>
+            <p>1. Не получается настроить клик на свободное пространство экрана при активном окне блока Меню. Я растянула блок меню на всю ширину экрана (может быть стоит на этом моменте остановиться и ограничиться шириной оранжевого блока), и пытаюсь прописать в скриптах следующее: если происходит клик на родительский блок, в котором находится оранжевый блок меню, при этом этот клик происходит вне оранжевого блока, меню должно закрываться. </p>
+            <p>2. Небольшой вопрос про transition на открывающемся блоке Меню (navigation), почему-то блок выезжает плавно только при открытии, а он должен еще и плавно исчезать. Мне кажется, я как-то не так этот transitions прописываю (в коде - transition: left 0.5s)</p>
+            <p>3. Не могу понять, почему не работает setTimeOut на модальном окне, которое открывается при нажатии на кнопку Отправить сообщение. Я оставила в js файле один из вариантов кода, которые я пробовала.</p>
+        </section>
 </article>
 
+
+<!------------Модальные окна------------->
+
+<!----------При нажатии на кнопку Отправить сообщение----------->
+<div class="wrapper_button">
+    <div class="contacts_button_active">
+        <div class="contacts_button_cross">
+            <div class="contacts_cross_white-line-first"></div>
+            <div class="contacts_cross_white-line-second"></div>
+        </div>
+        <div class="contacts_button_content">
+            Спасибо за Ваше сообщение! Я свяжусь с Вами в течение трех рабочих дней.
+        </div>
+    </div>
+</div>
 <script src="scripts.js"></script>
 </body>
 </html>
