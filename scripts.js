@@ -16,6 +16,7 @@ if (lines) {
         menuBlock.classList.add('active');
         header.classList.add('active');
         allInfo.classList.add('active');
+        lines.classList.add('first-active');
     });
 }
 
@@ -28,24 +29,34 @@ if (cross) {
         menuBlock.classList.remove('active');
         header.classList.remove('active');
         allInfo.classList.remove('active');
+        lines.classList.remove('first-active');
     });
 }
 
 /*--------------Блок меню - закрытие на клик по экрану-----------------*/
 
-if (menuBlock.classList.contains('active')) {
-    document.addEventListener( "click", function(e) {
-        const withinBoundaries = e.composedPath().includes(navContent);
-     
-        if (!withinBoundaries) {
-            menuBlock.classList.remove('active');
-            header.classList.remove('active');
-            lines.classList.remove('active');
-        }
+if (menuBlock) {
+    menuBlock.addEventListener("click", function(e) {
+        e.preventDefault;
+        menuBlock.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+        lines.classList.remove('first-active');
     });
 }
 
+/*----------------Блок меню - закрытие при навигации-----------------*/
 
+const links = document.querySelectorAll('a[href^="#"]');
+for (let link of links) {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        menuBlock.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+        lines.classList.remove('first-active');
+    });
+};
 
 /*-----------Кнопка Отправить сообщение------------*/
 
@@ -57,7 +68,7 @@ const whiteLineSecond = document.querySelector('.contacts_cross_white-line-secon
 
 /*-------------Клик на кнопку - открытие---------------*/
 
-if(btnSendMessage) {
+if (btnSendMessage) {
     btnSendMessage.addEventListener("click", function(e) {
         e.preventDefault;
         sendMessageActive.classList.add('active');
@@ -65,6 +76,8 @@ if(btnSendMessage) {
         blackLine.classList.add('active');
         whiteLineFirst.classList.add('active');
         whiteLineSecond.classList.add('active');
+
+        CloseSend();
     });
 }
 
@@ -96,18 +109,101 @@ if (screenButton) {
     });
 }
 
-/*-------------------Закрытие окна через 10 секунд---------------------------*/
+/*---------------Закрытие окна через 10 секунд-----------------*/
 
-if(sendMessageActive.classList.contains('active')){
-    setTimeout(function(){
-        sendMessageActive.classList.remove('active');
-    }, 3000)
+function CloseSend() {
+    setTimeout(function() {
+        sendMessageActive.classList.remove('active'); 
+        lines.classList.remove('active');
+        blackLine.classList.remove('active');
+        whiteLineFirst.classList.remove('active');
+        whiteLineSecond.classList.remove('active');
+    }, 10000);
+};
+
+
+/*---------Модальное окно отправить сообщение------------*/
+
+const writeMe = document.querySelector('.write-me');
+const writeMeCross = document.querySelector('.write-me_lines');
+const writeMeFirst = document.querySelector('.write-me_lines_first-line');
+const writeMeSecond = document.querySelector('.write-me_lines_second-line');
+
+/*-------------Высота всей страницы с учетом прокрутки-------------*/
+const scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+);
+
+/*-------------Высота видимой части экрана--------------*/
+const screenHeight = window.innerHeight;
+
+/*-------------Получение текущей прокрутки--------------*/
+let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+/*-------------Определяем положение прокрученной области относительно размера всего экрана---------------*/
+let difference = scrollHeight - 1.1 * screenHeight;
+
+setTimeout(function() {
+    if (scrollTop < difference) {
+        writeMeFirst.classList.add('active');
+        writeMeSecond.classList.add('active');
+        writeMe.classList.add('active');
+        header.classList.add('active');
+        allInfo.classList.add('active');
+    }    
+}, 30000)
+
+
+/*--------Клик на крестик - закрытие---------*/
+
+if (writeMeCross) {
+    writeMeCross.addEventListener("click", function(e) {
+        e.preventDefault;
+        writeMeFirst.classList.remove('active');
+        writeMeSecond.classList.remove('active');
+        writeMe.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+    });
+}
+
+/*----------Клик на кнопку Отправить сообщение ----------*/
+
+const writeMeButton = document.querySelector('.write-me_button');
+const send = document.querySelector('.contacts');
+if (writeMeButton) {
+    writeMeButton.addEventListener("click", function(e) {
+        e.preventDefault;
+        writeMeFirst.classList.remove('active');
+        writeMeSecond.classList.remove('active');
+        writeMe.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+        send.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+}
+
+
+/*---------Модальное окно блока Контакты----------*/
+
+const TEST = document.querySelector('.contacts_menu_h4');
+const sendMe = document.querySelector('.send-me');
+
+
+if (TEST) {
+    TEST.addEventListener("click", function(e) {
+        e.preventDefault;
+        sendMe.classList.add('active');
+    })
 }
 
 
 /*------------Плавная прокрутка экрана----------------*/
 
-const links = document.querySelectorAll('a[href^="#"]');
 for (let link of links) {
     link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -119,6 +215,3 @@ for (let link of links) {
         });
     });
 };
-
-
-

@@ -354,40 +354,58 @@
                     <img src = "src/Icons/Contacts/Facebook.svg" alt="Фейсбук" class="contacts_media_images"> 
                     <img src = "src/Icons/Contacts/Telegram.svg" alt="Телеграмм" class="contacts_media_images">
                     <img src = "src/Icons/Contacts/Instagram.svg" alt="Инстаграм" class="contacts_media_images">
-                </div>
-                <h4 class="contacts_h4-2">Или оставьте ваши данные и я сама вам напишу:</h4>
-
-                <!-----------Текстовые поля для ввода информации------------------->
-                <div class="form">
-                    <div class="name_div floating">
-                        <input class="name_input" type="username" id="username" name="username" placeholder="#">
-                        <label class="name_label" for="username">Ваше имя</label>
-                    </div>
-                    <div class="mail_div floating">
-                        <input class="mail_input" type="mail" id="mail" name="mail" placeholder="#">
-                        <label class="mail_label" for="mail">Ваша почта</label>
-                    </div>
-                    <div class="message_div floating">
-                        <input class="message_input" type="message" id="message" name="message" placeholder="#">
-                        <label class="message_label" for="message">Ваше сообщение</label>
-                    </div>
-                </div>
-                <div class="contacts_button">
-                    <a href="#" class="contacts_button_send"><b>Отправить сообщение</b></a>
-                </div>
+                </div>                
             </div>
         </section>
-
-        <section class="questions">
-            <h4> ВОПРОСЫ</h4>
-            <p>1. Не получается настроить клик на свободное пространство экрана при активном окне блока Меню. Я растянула родительский блок navigation на всю ширину экрана и внутри него прописала оранжевый блок navigation_content на 350px (может быть стоит на этом моменте остановиться и оставить только внутренний блок?), и пытаюсь прописать в скриптах следующее: если происходит клик на блок navigation, при этом этот клик происходит вне блока navigation_content, меню должно закрываться. Но что-то пошло не так.</p>
-            <p>2. Небольшой вопрос про transition на открывающемся блоке Меню (navigation), почему-то блок выезжает плавно только при открытии, а при закрытии окна он сразу исчезает. Мне кажется, я как-то не так этот transitions прописываю (в коде - transition: left 0.5s)</p>
-            <p>3. Не могу понять, почему не работает setTimeOut на модальном окне, которое открывается при нажатии на кнопку Отправить сообщение. Если я не прописываю условие, что setTimeOut должен срабатывать только при наличии у блока класса active, то окно закрывается и все работает (не совсем так, как должно, о работает), если условие появляется, то не работает вообще ничего. Я оставила в js файле один из вариантов кода, которые я пробовала.</p>
-        </section>
-</article>
+    </article>
 
 
 <!------------Модальные окна------------->
+
+<!----------Всплывающее окно, когда пользователь не дошел до конца----------------->
+<div class="write-me">
+    <div class="write-me_content">
+        <div class="write-me_lines">
+            <div class="write-me_lines_first-line"></div>
+            <div class="write-me_lines_second-line"></div>
+        </div>
+
+        <div class = "write-me_message">
+            <h2 class="write-me_message_content">Хотите оставить контактные данные, чтобы я могла с Вами связаться?</h2>
+        </div>
+        <div class="write-me_button">
+            <h4 class="write-me_button_content">Отправить сообщение</h4>
+        </div>
+    </div>
+
+</div>
+
+<!------------Модальное окно для отправки сообщения----------------->
+
+<div class="send-me">
+    <!-----------Текстовые поля для ввода информации------------------->
+    <div class="send-me_content">
+        <h4 class="contacts_h4-2">Или оставьте ваши данные и я сама вам напишу:</h4>
+        <div class="form">
+            <div class="name_div floating">
+                <input class="name_input" type="username" id="username" name="username" placeholder="#">
+                <label class="name_label" for="username">Ваше имя</label>
+            </div>
+            <div class="mail_div floating">
+                <input class="mail_input" type="mail" id="mail" name="mail" placeholder="#">
+                <label class="mail_label" for="mail">Ваша почта</label>
+            </div>
+            <div class="message_div floating">
+                <input class="message_input" type="message" id="message" name="message" placeholder="#">
+                <label class="message_label" for="message">Ваше сообщение</label>
+            </div>
+        </div>
+        <div class="contacts_button">
+            <a href="#" class="contacts_button_send"><b>Отправить сообщение</b></a>
+        </div>
+    </div>
+</div>
+
 
 <!----------При нажатии на кнопку Отправить сообщение----------->
 <div class="wrapper_button">
