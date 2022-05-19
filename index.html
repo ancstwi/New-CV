@@ -283,7 +283,6 @@
         </section>  
 
 
-
         <!------------------Блок Прайс-лист----------------------->
 
         <section class="price-list" id="price-list">
@@ -343,18 +342,22 @@
  <!----------------Блок Контакты--------------------------->
 
         <section class="contacts" id="contacts">
-            <img src="src/Photo/pic1.png" alt="Красивая картинка 2" class="main_img end_img">
             <div class="contacts_wrapper">
-                <div class="contacts_menu">
+                <div class="menu">
                     <h4 class="contacts_menu_h4">Контакты</h4>
                     <h2 class="contacts_menu_h2">Свяжитесь со мной</h2>
                 </div>
-                <h4 class="contacts_h4-1">Любым удобным для вас способом:</h4>
-                <div class="contacts_media">
-                    <img src = "src/Icons/Contacts/Facebook.svg" alt="Фейсбук" class="contacts_media_images"> 
-                    <img src = "src/Icons/Contacts/Telegram.svg" alt="Телеграмм" class="contacts_media_images">
-                    <img src = "src/Icons/Contacts/Instagram.svg" alt="Инстаграм" class="contacts_media_images">
-                </div>                
+                <div class="contacts_content">
+                    <img src="src/Photo/pic1.png" alt="Красивая картинка 2" class="main_img end_img">
+                    <div class="contacts_content_div">
+                        <h4 class="contacts_h4-1">Любым удобным для вас способом:</h4>
+                        <div class="contacts_media">
+                            <img src = "src/Icons/Contacts/Facebook.svg" alt="Фейсбук" class="contacts_media_images"> 
+                            <img src = "src/Icons/Contacts/Telegram.svg" alt="Телеграмм" class="contacts_media_images">
+                            <img src = "src/Icons/Contacts/Instagram.svg" alt="Инстаграм" class="contacts_media_images">
+                        </div>
+                    </div>        
+                </div>        
             </div>
         </section>
     </article>
@@ -385,7 +388,11 @@
 <div class="send-me">
     <!-----------Текстовые поля для ввода информации------------------->
     <div class="send-me_content">
-        <h4 class="contacts_h4-2">Или оставьте ваши данные и я сама вам напишу:</h4>
+        <div class="send-me_cross">
+            <div class="send-me_cross_first-line"></div>
+            <div class="send-me_cross_second-line"></div>
+        </div>
+        <h4 class="contacts_h4-2">Оставьте ваши данные и я сама Вам напишу:</h4>
         <div class="form">
             <div class="name_div floating">
                 <input class="name_input" type="username" id="username" name="username" placeholder="#">

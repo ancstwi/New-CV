@@ -138,6 +138,12 @@
 
     /*----Блок Контакты-----*/
 
+    .end_img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
     .floating .message_input {
         height: 155px;
     }
@@ -255,7 +261,7 @@
 
     .contacts_wrapper {
         margin-left: 40px; 
-        width: 60%;
+        width: 100%;
     }
 
     .contacts_media img {
@@ -264,6 +270,12 @@
         margin-right: 20px;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+
+    .end_img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 
     .floating .message_input {
@@ -444,6 +456,12 @@
         width: 100%;
     }
 
+    .contacts_button_content {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: x-large;
+    }
+
     /*-------------Заголовок блока Контакты----------------*/
 
     .contacts_menu {
@@ -485,6 +503,16 @@
         width: 95%;
         min-width: 220px;
         margin: 0 10%;
+    }
+
+    .end_img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .write-me_content {
+        height: 300px;
     }
 }
 
@@ -677,9 +705,6 @@
 
     /*---------Блок Контакты----------*/
 
-    .contacts {
-        margin-top: -25px;
-    }
 
     .floating .message_input {
         height: 150px;
@@ -701,4 +726,9 @@
     .skills .menu h4::after {
         top: 125px;
     }
+
+    .write-me_content {
+        height: 350px;
+    }
+
 }

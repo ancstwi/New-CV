@@ -1049,6 +1049,16 @@ header.active {
     display: flex;
 }
 
+.contacts_content {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts_content_div {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
 .contacts_media {
     display: flex;
 }
@@ -1062,52 +1072,14 @@ header.active {
 }
 
 .contacts_wrapper {
-    margin-left: 80px; 
-    width: 70%;
+    margin-left: 0px; 
+    width: 100%;
 }
 
 .end_img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-}
-
-/*-------------Заголовок блока Контакты----------------*/
-
-.contacts_menu {
-    display: flex;
-    flex-direction: column;
-    padding-top: 6px; 
-    padding-bottom: 40px;
-    justify-content: center;
-}
-
-.contacts_menu_h4 {
-    position: relative;
-    padding-bottom: 12px;   
-    padding-left: 8px;
-}
-
-.contacts_menu_h4::before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: -3px;
-    z-index: -1;
-    width: 36px;
-    height: 36px;
-    border-radius: 100%;
-    background-color:#FFA501;
-}
-
-.contacts_menu_h4::after {
-    content: "";
-    position: absolute;
-    top: 80px;
-    left: 0px;
-    width: 50px;
-    height: 3px;
-    background-color: #FFA501;
 }
 
 /*-----------Стили для форм-------------------*/
@@ -1370,6 +1342,7 @@ transform: translateY(-50%) scale(0.75);
 /*---------Стили для кнопки Отправить сообщение----------*/
 
 .contacts_button {
+    text-align: center;
     margin-top: 30px;   
 }
 
@@ -1435,7 +1408,11 @@ transform: translateY(-50%) scale(0.75);
 .write-me_message {
     margin: 0 auto;
     margin-top: -50px;
-    font-size: larger;
+}
+
+.write-me_message_content {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .write-me_button {
@@ -1516,16 +1493,14 @@ transform: translateY(-50%) scale(0.75);
     visibility: hidden;
     display: flex;
     align-items: center;
-    transform: translateY(100%);
-    transition: all 0.3s;
+    transition: 0.8s;
 }
 
 .send-me.active {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.8);
     visibility: visible;
-    transform: translateY(0);
-    transition: all 0.3s;
+    transition: 0.8s;
 }
 
 .send-me_content {
@@ -1534,6 +1509,51 @@ transform: translateY(-50%) scale(0.75);
     height: auto;
     background-color: #fff;
     padding: 50px;
+}
+
+/*--------------Черный крестик справа----------------*/
+
+.send-me_cross {
+    display: block;
+    margin-left: auto;
+    margin-right: -30px;
+    margin-top: -30px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.send-me_cross_first-line {
+    content: "";
+    position: relative;
+    top: 12px;
+    left: -2px;
+    width: 30px;
+    height: 3.5px;
+    background-color: #000000;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+.send-me_cross_second-line {
+    content: "";
+    position: relative;
+    top: 8.5px;
+    left: -2px;
+    width: 30px;
+    height: 3.5px;
+    background-color: #000000;
+    transition: 0.3s;
+}
+
+.send-me_cross_first-line.active {
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+.send-me_cross_second-line.active {
+    transform: rotate(-45deg);
+    transition: 0.3s;
 }
 
 /*---------Модальное окно при нажатии на кнопку Отправить сообщение-----------*/
