@@ -228,7 +228,7 @@ if(sendMeCross) {
     })
 }
 
-
+/*
 const mainContacts = document.querySelector('.contacts');
 
 
@@ -263,11 +263,8 @@ function offset(el) {
 
 /*---------Модальное окно блока Контакты----------*/
 
-/*
 const TEST = document.querySelector('.contacts_menu_h4');
-const sendMe = document.querySelector('.send-me');
-const contacts = document.querySelector('.contacts');
-let sendCoordinate = contacts.pageYoffset;
+let sendCoordinate = mainContacts.pageYoffset;
 
 let distanceTop = sendCoordinate - screenHeight;
 
