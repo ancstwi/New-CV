@@ -263,7 +263,6 @@ function offset(el) {
 
 /*---------Модальное окно блока Контакты----------*/
 
-const TEST = document.querySelector('.contacts_menu_h4');
 let sendCoordinate = mainContacts.pageYoffset;
 
 let distanceTop = sendCoordinate - screenHeight;
