@@ -77,7 +77,94 @@ for (let link of links) {
 
 
 
+/*--------------------------------------------------------------------------------*/
+/*----------------Всплывающее модальное окно Отправить сообщение------------------*/
+/*--------------------------------------------------------------------------------*/
 
+const writeMe = document.querySelector('.write-me');
+const writeMeCross = document.querySelector('.write-me_lines');
+const writeMeFirst = document.querySelector('.write-me_lines_first-line');
+const writeMeSecond = document.querySelector('.write-me_lines_second-line');
+
+/*-------------Высота всей страницы с учетом прокрутки-------------*/
+const scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+);
+
+/*-------------Высота видимой части экрана--------------*/
+const screenHeight = window.innerHeight;
+
+/*-------------Получение текущей прокрутки--------------*/
+let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+/*-------------Определяем положение прокрученной области относительно размера всего экрана---------------*/
+let difference = scrollHeight - 1.1 * screenHeight;
+
+/*------------------Открытие окна через 30 секунд----------------------*/
+
+setTimeout(function() {
+    if (scrollTop < difference) {
+        writeMeFirst.classList.add('active');
+        writeMeSecond.classList.add('active');
+        writeMe.classList.add('active');
+        header.classList.add('active');
+        allInfo.classList.add('active');
+    }    
+}, 30000)
+
+/*--------------Клик на крестик - закрытие-----------------*/
+
+if (writeMeCross) {
+    writeMeCross.addEventListener("click", function(e) {
+        e.preventDefault;
+        writeMeFirst.classList.remove('active');
+        writeMeSecond.classList.remove('active');
+        writeMe.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+    });
+}
+
+/*-------------Клик на свободное пространство - закрытие-------------*/
+
+if (writeMe) {
+    writeMe.addEventListener("click", function(e) {
+        if(!e.target.closest('.write-me_content')) {
+            writeMeFirst.classList.remove('active');
+            writeMeSecond.classList.remove('active');
+            writeMe.classList.remove('active');
+            header.classList.remove('active');
+            allInfo.classList.remove('active');
+        };
+    });
+}
+
+/*------------Клик на кнопку Отправить сообщение--------------*/
+
+const writeMeButton = document.querySelector('.write-me_button');
+const send = document.querySelector('.contacts');
+if (writeMeButton) {
+    writeMeButton.addEventListener("click", function(e) {
+        e.preventDefault;
+        writeMeFirst.classList.remove('active');
+        writeMeSecond.classList.remove('active');
+        writeMe.classList.remove('active');
+        header.classList.remove('active');
+        allInfo.classList.remove('active');
+
+        sendMe.classList.add('active');
+        sendMeFirstLine.classList.add('active');
+        sendMeSecondLine.classList.add('active');
+    });
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*-----------Модальное окно на весь экран на 10 секунд------------*/
+/*----------------------------------------------------------------*/
 
 /*-----------------------Кнопка Отправить сообщение-----------------------*/
 
@@ -147,91 +234,13 @@ function CloseSend() {
     }, 10000);
 };
 
-/*--------------------------------------------------------------------------------*/
-/*----------------------Всплывающее модальное окно Отправить сообщение-----------------------*/
-/*--------------------------------------------------------------------------------*/
-
-const writeMe = document.querySelector('.write-me');
-const writeMeCross = document.querySelector('.write-me_lines');
-const writeMeFirst = document.querySelector('.write-me_lines_first-line');
-const writeMeSecond = document.querySelector('.write-me_lines_second-line');
-
-/*-------------Высота всей страницы с учетом прокрутки-------------*/
-const scrollHeight = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-);
-
-/*-------------Высота видимой части экрана--------------*/
-const screenHeight = window.innerHeight;
-
-/*-------------Получение текущей прокрутки--------------*/
-let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-/*-------------Определяем положение прокрученной области относительно размера всего экрана---------------*/
-let difference = scrollHeight - 1.1 * screenHeight;
-
-/*------------------Открытие окна через 30 секунд----------------------*/
-
-setTimeout(function() {
-    if (scrollTop < difference) {
-        writeMeFirst.classList.add('active');
-        writeMeSecond.classList.add('active');
-        writeMe.classList.add('active');
-        header.classList.add('active');
-        allInfo.classList.add('active');
-    }    
-}, 30000)
-
-/*--------------Клик на крестик - закрытие-----------------*/
-
-if (writeMeCross) {
-    writeMeCross.addEventListener("click", function(e) {
-        e.preventDefault;
-        writeMeFirst.classList.remove('active');
-        writeMeSecond.classList.remove('active');
-        writeMe.classList.remove('active');
-        header.classList.remove('active');
-        allInfo.classList.remove('active');
-    });
-}
-
-/*-------------Клик на свободное пространство - закрытие-------------*/
-
-if(writeMe) {
-    writeMe.addEventListener("click", function(e) {
-        if(!e.target.closest('.write-me_content')) {
-            writeMeFirst.classList.remove('active');
-            writeMeSecond.classList.remove('active');
-            writeMe.classList.remove('active');
-            header.classList.remove('active');
-            allInfo.classList.remove('active');
-        };
-    });
-}
-
-/*------------Клик на кнопку Отправить сообщение--------------*/
-
-const writeMeButton = document.querySelector('.write-me_button');
-const send = document.querySelector('.contacts');
-if (writeMeButton) {
-    writeMeButton.addEventListener("click", function(e) {
-        e.preventDefault;
-        writeMeFirst.classList.remove('active');
-        writeMeSecond.classList.remove('active');
-        writeMe.classList.remove('active');
-        header.classList.remove('active');
-        allInfo.classList.remove('active');
-
-        sendMe.classList.add('active');
-        sendMeFirstLine.classList.add('active');
-        sendMeSecondLine.classList.add('active');
-    });
-}
 
 
+/*------------------------------------------------------------------------*/
+/*--------Модальное окно, появляющееся при скролле блока Контакты---------*/
+/*------------------------------------------------------------------------*/
 
+/*-----------Напишите мне - открытие при скролле---------------*/
 
 const sendMe = document.querySelector('.send-me');
 const contacts = document.querySelector('.contacts_menu_h4');
@@ -256,6 +265,21 @@ if(sendMeCross) {
         sendMeFirstLine.classList.remove('active');
         sendMeSecondLine.classList.remove('active');
     })
+}
+
+/*---------Сам скролл модального окна блока Контакты----------*/
+
+let sendCoordinate = mainContacts.pageYoffset;
+
+let distanceTop = sendCoordinate - screenHeight;
+
+if (scrollTop > distanceTop) {
+    sendMe.classList.add('active');
+}
+else {
+    if (sendMe.classList.contains('active')) {
+        sendMe.classList.remove('active');
+    }
 }
 
 /*
@@ -288,22 +312,6 @@ function offset(el) {
           scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
           scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-}
-
-
-/*---------Модальное окно блока Контакты----------*/
-
-let sendCoordinate = mainContacts.pageYoffset;
-
-let distanceTop = sendCoordinate - screenHeight;
-
-if (scrollTop > distanceTop) {
-    sendMe.classList.add('active');
-}
-else {
-    if (sendMe.classList.contains('active')) {
-        sendMe.classList.remove('active');
-    }
 }
 
 /*---------------Высота экрана без блока Контакты--------------------*/
