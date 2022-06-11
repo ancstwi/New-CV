@@ -243,17 +243,8 @@ function CloseSend() {
 /*-----------Напишите мне - открытие при нажатии на заголовок (ВРЕМЕННО)---------------*/
 
 const sendMe = document.querySelector('.send-me');
-const contacts = document.querySelector('.contacts_menu_h4');
 const sendMeFirstLine = document.querySelector('.send-me_cross_first-line');
 const sendMeSecondLine = document.querySelector('.send-me_cross_second-line');
-if (contacts) {
-    contacts.addEventListener("click", function(e) {
-        e.preventDefault;
-        sendMe.classList.add('active');
-        sendMeFirstLine.classList.add('active');
-        sendMeSecondLine.classList.add('active');
-    });
-}
 
 /*-----------Напишите мне - закрытие на крестик---------------*/
 
@@ -267,69 +258,19 @@ if(sendMeCross) {
     })
 }
 
-/*---------Сам скролл модального окна блока Контакты----------*/
+/*---------------Открытие элемента при скролле---------------*/
 
-let sendCoordinate = mainContacts.pageYoffset;
-
-let distanceTop = sendCoordinate - screenHeight;
-
-if (scrollTop > distanceTop) {
-    sendMe.classList.add('active');
-}
-else {
-    if (sendMe.classList.contains('active')) {
+onscroll = function() {
+    if(window.scrollY + 1 >= this.document.documentElement.scrollHeight - this.document.documentElement.clientHeight) {
+        sendMe.classList.add('active');
+        sendMeFirstLine.classList.add('active');
+        sendMeSecondLine.classList.add('active');
+    }
+    else {
         sendMe.classList.remove('active');
+        sendMeFirstLine.classList.remove('active');
+        sendMeSecondLine.classList.remove('active');
     }
 }
 
-/*
-const mainContacts = document.querySelector('.contacts');
-
-
-if (mainContacts){
-    window.addEventListener("scroll", animOnScroll);
-    function animOnScroll() {
-        const contactsHeight = mainContacts.offsetHeight;
-        const contactsOffSet = offset(mainContacts).top;
-        const contactsStart = 4;
-        let contactsPoint = window.innerHeight - contactsHeight / contactsStart;
-
-        if (contactsPoint > window.innerHeight) {
-            contactsPoint = window.innerHeight - window.innerHeight / contactsStart;
-        }
-
-        if ((contacts.pageYOffset > window.innerHeight - contactsPoint) && contacts.pageYOffset < (contactsOffSet + contactsHeight)) {
-            sendMe.classList.add('active');
-        }
-        else {
-            sendMe.classList.remove('active');
-        }
-    }
-}
-
-function offset(el) {
-    const rect = el.getBoundingClientRect(),
-          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
-}
-
-/*---------------Высота экрана без блока Контакты--------------------*/
-/*
-let contactsScreen = scrollHeight - 1000;
-
-
-function onEntry(entry) {
-    entry.forEach(change => {
-      if (change.isIntersecting) {
-        change.target.classList.add('element-show');
-      }
-    });
-  }
-  let options = { threshold: [0.5] };
-  let observer = new IntersectionObserver(onEntry, options);
-  let elements = document.querySelectorAll('.element-animation');
-  for (let elm of elements) {
-    observer.observe(elm);
-  }
-*/
+onscroll();
